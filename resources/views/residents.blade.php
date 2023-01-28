@@ -55,7 +55,7 @@
                                     Resident
                                 </button>
                                 <!-- Insert Resident Modal -->
-                                <livewire:modals.addresidentmodal />
+                                <livewire:residents.addresident />
                             </div>
                         </div>
 
@@ -207,7 +207,7 @@
                                         </button>
                                         <!-- Insert Update Modal -->
 
-                                        <livewire:modals.updateresidentmodal>
+                                        <livewire:residents.updateresident>
 
                                         <!-- View Resident Modal -->
                                         <button data-modal-target="viewresident-modal" data-modal-toggle="viewresident-modal" class="inline-flex items-center hover:bg-green-400 focus:ring-2 focus:outline-none  focus:ring-green-500" title="View Resident">
@@ -216,14 +216,14 @@
 
                                         <!-- Insert View Modal -->
 
-                                        <livewire:modals.viewresidentmodal>
+                                        <livewire:residents.viewresident>
 
                                         <!-- Delete Default Modal -->
                                         <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="inline-flex items-center hover:bg-red-400 focus:ring-2 focus:outline-none  focus:ring-red-500" title="Delete Official">
                                             <x-fas-square-xmark class=" w-4 h-4 fill-red-600" />
                                         </button>
                                         <!-- Insert Delete Modal -->
-                                        <livewire:modals.deleteresidentmodal>
+                                        <livewire:residents.deleteresident>
                                     </td>
                                 </tr>
 

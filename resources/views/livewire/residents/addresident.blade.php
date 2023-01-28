@@ -1,5 +1,5 @@
 <!-- add Resident -->
-<div id="addresident-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full h-full overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+<div id="addresident-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full h-full overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full" wire:ignore.self>
     <div class="relative w-full h-full">
         <!-- Modal content -->
         <div class="relative bg-gray-200 dark:bg-gray-700">
@@ -78,108 +78,105 @@
 
                                     <div class="pb-5 col-span-2">
                                         <label for="firstname" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
-                                        <input type="name" name="firstname" id="firstname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Darryl Kaye" required>
+                                        <input wire:model.defer="firstname" type="name" name="firstname" id="firstname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Darryl Kaye" required>
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="middlename" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Middle Name</label>
-                                        <input type="name" name="middlename" id="middlename" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="A." required>
+                                        <input wire:model.defer="middlename" type="name" name="middlename" id="middlename" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="A." required>
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="lastname" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
-                                        <input type="name" name="lastname" id="lastname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Sanga" required>
+                                        <input wire:model.defer="lastname" type="name" name="lastname" id="lastname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Sanga" required>
                                     </div>
                                     <div class="pb-5">
                                         <label for="suffixname" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Suffix</label>
-                                        <input type="name" name="suffixname" id="suffixname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Jr." required>
+                                        <input wire:model.defer="suffix" type="name" name="suffixname" id="suffixname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Jr." required>
                                     </div>
                                     <div class="pb-5">
                                         <label for="aliasname" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Alias</label>
-                                        <input type="name" name="aliasname" id="aliasname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="DA" required>
+                                        <input wire:model.defer="alias" type="name" name="aliasname" id="aliasname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="DA" required>
                                     </div>
                                     <div class="pb-5">
                                         <label for="gender" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Gender</label>
-                                        <select id="gender" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                            <option selected>Choose a Gender</option>
-                                            <option>Male</option>
-                                            <option>Female</option>
+                                        <select wire:model.defer="gender" id="gender" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
                                         </select>
                                     </div>
                                     <div class="pb-5 col-span-2">
-                                        <label for="bdate" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Birth Date</label>
-                                        <input type="date" name="bdate" id="bdate" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="01/01/2001" required>
+                                        <label for="birthdate" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Birth Date</label>
+                                        <input wire:model.defer="birthdate" type="date" name="bdate" id="bdate" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="01/01/2001" required>
                                     </div>
                                     <div class="pb-5 col-span-3">
                                         <label for="placeofbirth" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Place of Birth</label>
-                                        <input type="text" name="placeofbirth" id="placeofbirth" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Zone 6B, Baluarte, Tagoloan, Mis. Or." required>
+                                        <input wire:model.defer.defer="birthplace" type="text" name="placeofbirth" id="placeofbirth" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Zone 6B, Baluarte, Tagoloan, Mis. Or." required>
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="email" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-                                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="da@gmail.com" required>
+                                        <input wire:model.defer="email" type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="da@gmail.com" required>
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="contact" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Contact</label>
-                                        <input type="number" name="contact" id="contact" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="09123456789" required>
+                                        <input wire:model.defer="contact" type="text" name="contact" id="contact" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="09123456789" required>
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="citizenship" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Citizenship</label>
-                                        <select id="citizenship" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <select wire:model.defer="citizenship" id="citizenship" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                             <option selected>Choose a Citizenship</option>
-                                            <option>Filipino</option>
-                                            <option>FilAm</option>
+                                            <option value="filipino">Filipino</option>
+                                            <option value="filam">FilAm</option>
                                         </select>
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="civilstatus" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Civil Status</label>
-                                        <select id="civilstatus" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <select wire:model.defer="civilstatus" id="civilstatus" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                             <option selected>Choose a Civil Status</option>
-                                            <option>Single</option>
-                                            <option>Married</option>
-                                            <option>Widdowed</option>
+                                            <option value="single">Single</option>
+                                            <option value="married">Married</option>
+                                            <option value="widdowed">Widdowed</option>
                                         </select>
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="alivedeceased" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Alived/Deceased</label>
-                                        <select id="alivedeceased" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <select wire:model.defer="alivedordeceased" id="alivedeceased" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                             <option selected>Choose a Status</option>
-                                            <option>Alived</option>
-                                            <option>Deceased</option>
+                                            <option value="alived">Alived</option>
+                                            <option value="deceased">Deceased</option>
                                         </select>
                                     </div>
                                     <div class="pb-5">
                                         <label for="votersstatus" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Voters Status</label>
-                                        <select id="votersstatus" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <select wire:model.defer="voterstatus" id="votersstatus" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                             <option selected>Choose a Status</option>
-                                            <option>Yes</option>
-                                            <option>No</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
                                         </select>
                                     </div>
                                     <div class="pb-5">
                                         <label for="bloodtype" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Blood Type</label>
-                                        <select id="bloodtype" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <select wire:model.defer="bloodtype" id="bloodtype" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                             <option selected>Choose a Blood Type</option>
-                                            <option>A</option>
-                                            <option>O+</option>
+                                            <option value="A">A</option>
+                                            <option value="O+">O+</option>
                                         </select>
                                     </div>
                                     <div class="pb-5">
                                         <label for="pwd" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">PWD?</label>
-                                        <select id="pwd" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <select wire:model.defer="pwd" id="pwd" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                             <option selected>Choose a Status</option>
-                                            <option>Yes</option>
-                                            <option>No</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
                                         </select>
                                     </div>
-
-
                                 </div>
                                 <!-- Address -->
                                 <div class="grid grid-cols-4 gap-x-5">
                                     <div class="pb-5">
                                         <label for="region" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Region</label>
                                         <select id="region" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                            <option selected>Choose a Region</option>
-                                            <option>Region 1</option>
-                                            <option>Region 2</option>
+                                            
+                                            <option>Region</option>
+                                            
                                         </select>
                                     </div>
                                     <div class="pb-5">
@@ -208,15 +205,15 @@
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="street" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Street</label>
-                                        <input type="text" name="street" id="street" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Purok/Street/House Number" required>
+                                        <input wire:model.defer="street" type="text" name="street" id="street" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Purok/Street/House Number" required>
                                     </div>
                                     <div class="pb-5">
                                         <label for="nationalid" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">National ID</label>
-                                        <input type="number" name="nationalid" id="nationalid" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="1234567887654321" required>
+                                        <input wire:model.defer="nationalid" type="number" name="nationalid" id="nationalid" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="1234567887654321" required>
                                     </div>
                                     <div class="pb-5 col-span-4">
                                         <label for="remarks" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Remarks</label>
-                                        <input type="text" name="remarks" id="remarks" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Example. I have a birthmark on my face." required>
+                                        <input wire:model.defer="remarks" type="text" name="remarks" id="remarks" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Example. I have a birthmark on my face." required>
                                     </div>
                                 </div>
                             </div>
@@ -233,19 +230,19 @@
 
                                     <div class="pb-5">
                                         <label for="occupation" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Occupation</label>
-                                        <input type="text" name="occupation" id="occupation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Office Clerk" required>
+                                        <input wire:model.defer="occupation" type="text" name="occupation" id="occupation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Office Clerk" required>
                                     </div>
                                     <div class="pb-5">
                                         <label for="occupationaddress" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Occupation Address</label>
-                                        <input type="text" name="occupationaddress" id="occupationaddress" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Zone 6B, Baluarte, Tagoloan, Mis. Or." required>
+                                        <input wire:model.defer="officeaddress" type="text" name="occupationaddress" id="occupationaddress" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Zone 6B, Baluarte, Tagoloan, Mis. Or." required>
                                     </div>
                                     <div class="pb-5">
                                         <label for="employername" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Employer Name</label>
-                                        <input type="text" name="employername" id="employername" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Juan Dela Cruz" required>
+                                        <input wire:model.defer="employer" type="text" name="employername" id="employername" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Juan Dela Cruz" required>
                                     </div>
                                     <div class="pb-5">
                                         <label for="employercontact" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Employer Contact</label>
-                                        <input type="number" name="employercontact" id="employercontact" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="09123456789" required>
+                                        <input wire:model.defer="employercontact" type="number" name="employercontact" id="employercontact" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="09123456789" required>
                                     </div>
 
                                 </div>
@@ -278,7 +275,7 @@
                             <!-- Modal footer -->
                             <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600 justify-end">
                                 <button data-modal-hide="addresident-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
-                                <button data-modal-hide="addresident-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save</button>
+                                <button wire:click="store()" data-modal-hide="addresident-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save</button>
                             </div>
 
                         </div>

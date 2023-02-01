@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('lastname');
             $table->string('suffix');
             $table->string('alias');
-            $table->string('gender')->nullable();
+            $table->string('gender');
             $table->date('birthdate');
             $table->string('birthplace');
             $table->string('email')->unique();

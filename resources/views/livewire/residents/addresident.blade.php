@@ -1,5 +1,5 @@
 <!-- add Resident -->
-<div id="addresident-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full h-full overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full" wire:ignore.self>
+<div wire:ignore.self id="addresident-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full h-full overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
     <div class="relative w-full h-full">
         <!-- Modal content -->
         <div class="relative bg-gray-200 dark:bg-gray-700">
@@ -79,6 +79,7 @@
                                     <div class="pb-5 col-span-2">
                                         <label for="firstname" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
                                         <input wire:model.defer="firstname" type="name" name="firstname" id="firstname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Darryl Kaye" required>
+                                        @error('firstname') <span class="error">{{ $message }}</span> @enderror
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="middlename" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Middle Name</label>
@@ -99,6 +100,7 @@
                                     <div class="pb-5">
                                         <label for="gender" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Gender</label>
                                         <select wire:model.defer="gender" id="gender" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <option selected>Gender</option>
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
                                         </select>
@@ -109,7 +111,7 @@
                                     </div>
                                     <div class="pb-5 col-span-3">
                                         <label for="placeofbirth" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Place of Birth</label>
-                                        <input wire:model.defer.defer="birthplace" type="text" name="placeofbirth" id="placeofbirth" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Zone 6B, Baluarte, Tagoloan, Mis. Or." required>
+                                        <input wire:model.defer="birthplace" type="text" name="placeofbirth" id="placeofbirth" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Zone 6B, Baluarte, Tagoloan, Mis. Or." required>
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="email" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Email</label>
@@ -243,6 +245,7 @@
                                     <div class="pb-5">
                                         <label for="employercontact" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Employer Contact</label>
                                         <input wire:model.defer="employercontact" type="number" name="employercontact" id="employercontact" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="09123456789" required>
+                                        @error('employercontact') <span class="error">{{ $message }}</span> @enderror
                                     </div>
 
                                 </div>
@@ -275,7 +278,7 @@
                             <!-- Modal footer -->
                             <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600 justify-end">
                                 <button data-modal-hide="addresident-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
-                                <button wire:click="store()" data-modal-hide="addresident-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save</button>
+                                <button data-modal="addresident-modal" type="button" wire:click.prevent="store()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save</button>
                             </div>
 
                         </div>

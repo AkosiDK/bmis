@@ -17,9 +17,44 @@ class Addresident extends Component
 
     public $firstname,$middlename,$lastname,$suffix,$alias,$gender,$birthplace,$birthdate,$email,$contact,$citizenship,$civilstatus,
            $alivedordeceased,$voterstatus,$bloodtype,$pwd,$street,$nationalid,$remarks,$occupation,$officeaddress,$employer,$employercontact;
+    
+    
+    protected $rules = [
+
+            
+                'firstname' => 'required|string',
+                'middlename' => 'required',
+                'lastname' => 'required',
+                'suffix' => 'required',
+                'alias' => 'required',
+                'gender' => 'required',
+                'birthdate' => 'required',
+                'birthplace' => 'required',
+                'email' => 'required|email',
+                'contact' => 'required',
+                'citizenship' => 'required',
+                'civilstatus' => 'required',
+                'alivedordeceased' => 'required',
+                'voterstatus' => 'required',
+                'bloodtype' => 'required',
+                'pwd' => 'required',
+                'street' => 'required',
+                'nationalid' => 'required',
+                'remarks' => 'required',
+                'occupation' => 'required',
+                'officeaddress' => 'required',
+                'employer' => 'required',
+                'employercontact' => 'required',
+        ];
+
+
 
     public function store(Request $request)
     {
+        $this->validate();
+
+    
+        // Residents::create($validatedData);
         
             Residents::create([
                 'firstname' => $this->firstname,

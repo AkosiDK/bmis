@@ -23,13 +23,10 @@
             </div>
         </div>
     </div>
-
     <div class="mx-auto pt-5">
         <div class="bg-white overflow-hidden sm:rounded-lg shadow-lg">
-
             <div class="grid grid-cols-4 gap-5">
                 <div class="rounded-lg col-span-4">
-
                     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
                         <div class="mx-auto pl-5 pb-2 pt-3 text-lg font-bold">Barangay Resident Information</div>
                         <div class="grid grid-cols-12">
@@ -46,8 +43,7 @@
                                         <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-full text-sm px-4 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700" title="Search Resident">Search</button>
                                     </div>
                                 </form>
-                            </div>
-                            
+                            </div>     
                             <div class="col-span-9 pt-2 justify-self-end px-5">
                                 <!-- add Resident Modal -->
                                 <button data-modal-target="addresident-modal" data-modal-toggle="addresident-modal" class="text-white inline-flex items-center bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-full text-sm px-4 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700" title="Add Resident">
@@ -58,192 +54,12 @@
                                 <livewire:residents.addresident />
                             </div>
                         </div>
-
-                        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                            <thead class="text-xs text-white uppercase bg-gray-800 dark:bg-gray-700 dark:text-gray-400">
-                                <tr>
-                                    <th scope="col" class="px-6 py-3">
-                                        <div class="flex items-center">
-                                            Fullname
-                                            <a href="#">
-                                                <x-fas-sort class="w-3 h-3" />
-                                            </a>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        <div class="flex items-center">
-                                            National ID
-                                            <a href="#">
-                                                <x-fas-sort class="w-3 h-3" />
-                                            </a>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        <div class="flex items-center">
-                                            Alias
-                                            <a href="#">
-                                                <x-fas-sort class="w-3 h-3" />
-                                            </a>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        <div class="flex items-center">
-                                            Gender
-                                            <a href="#">
-                                                <x-fas-sort class="w-3 h-3" />
-                                            </a>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        <div class="flex items-center">
-                                            Age
-                                            <a href="#">
-                                                <x-fas-sort class="w-3 h-3" />
-                                            </a>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        <div class="flex items-center">
-                                            Birthday
-                                            <a href="#">
-                                                <x-fas-sort class="w-3 h-3" />
-                                            </a>
-                                        </div>
-                                    </th>
-
-                                    <th scope="col" class="px-6 py-3">
-                                        <div class="flex items-center">
-                                            Civil Status
-                                            <a href="#">
-                                                <x-fas-sort class="w-3 h-3" />
-                                            </a>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        <div class="flex items-center">
-                                            Voters Status
-                                            <a href="#">
-                                                <x-fas-sort class="w-3 h-3" />
-                                            </a>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        <div class="flex items-center">
-                                            PWD
-                                            <a href="#">
-                                                <x-fas-sort class="w-3 h-3" />
-                                            </a>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        <div class="flex items-center">
-                                            Address
-                                            <a href="#">
-                                                <x-fas-sort class="w-3 h-3" />
-                                            </a>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        <div class="flex items-center">
-                                            Alived/Deceased
-                                            <a href="#">
-                                                <x-fas-sort class="w-3 h-3" />
-                                            </a>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        <div class="flex items-center">
-                                            Action
-                                            <a href="#">
-                                                <x-fas-sort class="w-3 h-3" />
-                                            </a>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                                <tr class="bg-gray-100 dark:bg-gray-800">
-                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
-                                        Darryl Kaye A. Sanga
-                                    </td>
-                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
-                                        123456789123
-                                    </td>
-                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
-                                        DA
-                                    </td>
-                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
-                                        Male
-                                    </td>
-                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
-                                        21
-                                    </td>
-                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
-                                        01/01/2005
-                                    </td>
-
-                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
-                                        Married
-                                    </td>
-                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
-                                        Yes
-                                    </td>
-                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
-                                        Yes
-                                    </td>
-                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
-                                        Zone 6B, Baluarte, Tagoloan, Mis. Or.
-                                    </td>
-                                    <td class="px-6 py-2">
-                                        <span class="bg-green-600 text-white text-xs font-medium items-center file:mr-2 px-2.5 py-0.5 rounded-full" title="Official is Active">
-                                            Alived
-                                        </span>
-                                    </td>
-                                    <td class="px-6 py-2">
-                                        <!-- Update Modal -->
-                                        <button data-modal-target="editresident-modal" data-modal-toggle="editresident-modal" class="inline-flex items-center hover:bg-blue-400 focus:ring-2 focus:outline-none  focus:ring-blue-500" title="Edit Resident">
-                                            <x-fas-square-pen class="w-4 h-4  fill-blue-600" />
-                                        </button>
-                                        <!-- Insert Update Modal -->
-
-                                        <livewire:residents.updateresident>
-
-                                        <!-- View Resident Modal -->
-                                        <button data-modal-target="viewresident-modal" data-modal-toggle="viewresident-modal" class="inline-flex items-center hover:bg-green-400 focus:ring-2 focus:outline-none  focus:ring-green-500" title="View Resident">
-                                            <x-fas-eye class="w-4 h-4  fill-green-600" />
-                                        </button>
-
-                                        <!-- Insert View Modal -->
-
-                                        <livewire:residents.viewresident>
-
-                                        <!-- Delete Default Modal -->
-                                        <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="inline-flex items-center hover:bg-red-400 focus:ring-2 focus:outline-none  focus:ring-red-500" title="Delete Official">
-                                            <x-fas-square-xmark class=" w-4 h-4 fill-red-600" />
-                                        </button>
-                                        <!-- Insert Delete Modal -->
-                                        <livewire:residents.deleteresident>
-                                    </td>
-                                </tr>
-
-
-
-
-
-                            </tbody>
-                        </table>
+                      <livewire:residents.residentstable />
                     </div>
-
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 
     <div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
         <div class="flex flex-1 justify-between sm:hidden">

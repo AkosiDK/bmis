@@ -43,7 +43,7 @@
             </x-slot>
             <p class="text-white">{{ __('Dashboard') }}</p>
         </x-sidebar-nav-link>
-        
+
         <x-sidebar-nav-link :href="route('officials')" :active="request()->routeIs('officials')">
             <x-slot name="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-4" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
@@ -52,7 +52,7 @@
             </x-slot>
             <p class="text-white">{{ __('Barangay Officials') }}</p>
         </x-sidebar-nav-link>
-        
+
         <!-- Ayaw Gumana -->
 
         <x-sidebar-nav-link :href="route('residents')" :active="request()->routeIs('residents')">
@@ -65,26 +65,44 @@
             <p class="text-white">{{ __('Barangay Residents') }}</p>
         </x-sidebar-nav-link>
 
-        <x-sidebar-nav-link :href="route('certificates')" :active="request()->routeIs('certificates')">
-            <x-slot name="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-4" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-            </x-slot>
-            <p class="text-white">{{ __('Barangay Certificates') }}</p>
-        </x-sidebar-nav-link>
 
-        <x-sidebar-nav-link :href="route('businesspermits')" :active="request()->routeIs('businesspermits')">
-            <x-slot name="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-4" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-            </x-slot>
-            <p class="text-white">{{ __('Brgy Business Permits') }}</p>
-        </x-sidebar-nav-link>
-        
+        <div aria-controls="dropdown-example" data-collapse-toggle="dropdown-example" sidebar-toggle-item class="active:bg-blue-600 cursor-pointer">
+            <x-sidebar-nav-link>
+                <x-slot name="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-4" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span class="text-white mr-4">Barangay Certificates </span>
+                    <x-fas-sort-down sidebar-toggle-item class="w-4 h-4 fill-white inline" />
+                </x-slot>
+            </x-sidebar-nav-link>
+        </div>
+
+        <ul id="dropdown-example" class="hidden">
+            <x-sidebar-nav-link :href="route('brgyclearance')" :active="request()->routeIs('brgyclearance')">
+                <li>
+                    <x-slot name="icon">
+                        <p class="text-white flex items-center pl-11 group">{{ __('Barangay Clearance') }}</p>
+                    </x-slot>
+                </li>
+            </x-sidebar-nav-link>
+            <x-sidebar-nav-link :href="route('brgyindigency')" :active="request()->routeIs('brgyindigency')">
+                <li>
+                    <x-slot name="icon">
+                        <p class="text-white flex items-center pl-11 group">{{ __('Barangay Indigency') }}</p>
+                    </x-slot>
+                </li>
+            </x-sidebar-nav-link>
+            <x-sidebar-nav-link :href="route('brgybusinesspermit')" :active="request()->routeIs('brgybusinesspermit')">
+                <li>
+                    <x-slot name="icon">
+                        <p class="text-white flex items-center pl-11 group">{{ __('Barangay Business Permit') }}</p>
+                    </x-slot>
+                </li>
+            </x-sidebar-nav-link>
+        </ul>
+
         <x-sidebar-nav-link :href="route('blotters')" :active="request()->routeIs('blotters')">
             <x-slot name="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-4" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">

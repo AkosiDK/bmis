@@ -32,13 +32,17 @@ Route::get('/residents', function () {
     return view('residents');
 })->middleware(['auth', 'verified'])->name('residents');
 
-Route::get('/certificates', function () {
-    return view('certificates');
-})->middleware(['auth', 'verified'])->name('certificates');
+Route::get('/brgyclearance', function () {
+    return view('brgyclearance');
+})->middleware(['auth', 'verified'])->name('brgyclearance');
 
-Route::get('/businesspermits', function () {
-    return view('businesspermits');
-})->middleware(['auth', 'verified'])->name('businesspermits');
+Route::get('/brgyindigency', function () {
+    return view('brgyindigency');
+})->middleware(['auth', 'verified'])->name('brgyindigency');
+
+Route::get('/brgybusinesspermit', function () {
+    return view('brgybusinesspermit');
+})->middleware(['auth', 'verified'])->name('brgybusinesspermit');
 
 Route::get('/blotters', function () {
     return view('blotters');

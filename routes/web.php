@@ -36,6 +36,10 @@ Route::get('/brgyclearance', function () {
     return view('brgyclearance');
 })->middleware(['auth', 'verified'])->name('brgyclearance');
 
+Route::get('/brgyclearanceviewprint', function () {
+    return view('brgyclearanceviewprint');
+})->middleware(['auth', 'verified'])->name('brgyclearanceviewprint');
+
 Route::get('/brgyindigency', function () {
     return view('brgyindigency');
 })->middleware(['auth', 'verified'])->name('brgyindigency');

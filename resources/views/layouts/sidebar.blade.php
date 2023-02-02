@@ -1,8 +1,8 @@
 <!-- Sidebar Menu -->
 <div :class="{ '!translate-x-0': open }" class="fixed top-0 left-0 z-20 w-9/12 h-screen overflow-y-auto transition duration-300 ease-in-out transform -translate-x-full bg-gray-800 shadow-2xl sm:w-64 md:translate-x-0">
     <!-- Sidebar Header -->
-    <div class="flex items-center h-20">
-        <div class="inline-flex items-center justify-center w-full md:justify-center">
+    <div class="flex items-center h-20 ">
+        <div class="inline-flex items-center justify-center w-full md:justify-center ">
             <!-- Hamburger -->
             <a href="#" @click="open = !open" class="absolute right-0 top-0 mr-1.5 mt-1.5 inline-flex p-1 items-center justify-center rounded-md hover:bg-blue-100 md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 stroke-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

@@ -23,14 +23,14 @@
             <header class="flex items-center h-20 md:h-auto" x-data="{ open: false }">
                 <nav class="relative flex items-center w-full px-4">
                     <!-- Mobile Header -->
-                    <div class="inline-flex items-center justify-center w-full md:hidden">
+                    <div class="inline-flex items-center justify-center w-full md:hidden print:hidden">
                         <a href="#" @click="open = true" @click.away="open = false" class="absolute left-0 pl-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 stroke-blue-600" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </a>
                         <a href="#">
-                            <h2 class="text-2xl font-extrabold text-blue-600">{{ config('app.name', 'Laravel') }}</h2>
+                            <h2 class="text-2xl font-extrabold text-blue-600 print:hidden">{{ config('app.name', 'Laravel') }}</h2>
                         </a>
                     </div>
                     
@@ -43,9 +43,9 @@
             <div class="h-auto py-3.5 bg-gradient-to-r from-blue-600 to-blue-500">
                 <div class="w-full px-3.5 mx-auto">
                     <div class="flex flex-wrap -mx-3.5 items-center">
-                        <div class="flex-[0_0_100%] max-w-full w-full relative px-3.5">
+                        <div class="flex-[0_0_100%] max-w-full w-full relative px-3.5 print:hidden">
                             <!-- Breadcrumbs -->
-                            <nav class="text-blue-100">
+                            <nav class="text-blue-100 print:hidden">
                                 {{ $breadcrumb }}
                             </nav>
                             <!-- Title -->

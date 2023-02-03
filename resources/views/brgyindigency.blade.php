@@ -20,7 +20,8 @@
                         <p class="text-xs font-bold">Municipality of Tagoloan, 9001</p>
                         <img src="{{ asset('img/brgylogo.png') }}" alt="" class="mx-auto w-24">
                         <p class="text-xl font-bold">BRGY. BALUARTE</p>
-                        <p class="text-xs font-bold">Contact No.: 09123456789 / Email: brgybaluarte@gmail.com</p>
+                        <p class="text-xs font-bold">Contact No.: 09123456789</p>
+                        <p class="text-xs font-bold">Email: brgybaluarte@gmail.com</p>
                     </div>
                 </div>
             </div>

@@ -20,7 +20,8 @@
                         <p class="text-xs font-bold">Municipality of Tagoloan, 9001</p>
                         <img src="{{ asset('img/brgylogo.png') }}" alt="" class="mx-auto w-24">
                         <p class="text-xl font-bold">BRGY. BALUARTE</p>
-                        <p class="text-xs font-bold">Contact No.: 09123456789 / Email: brgybaluarte@gmail.com</p>
+                        <p class="text-xs font-bold">Contact No.: 09123456789</p>
+                        <p class="text-xs font-bold">Email: brgybaluarte@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -81,7 +82,7 @@
                                     <form class="space-y-6" action="#">
                                         <div class="grid grid-cols-2">
                                             <div class="col-span-1">
-                                                <div class="p-6 space-y-3">
+                                                <div class="py-6 px-6 space-y-3">
                                                     <!-- Business Name -->
                                                     <label for="addbrgybusspermbusinessname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Business Name</label>
                                                     <input type="text" name="addbrgybusspermbusinessname" id="addbrgybusspermbusinessname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter Business Name" required>
@@ -105,7 +106,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-span-1">
-                                                <div class="p-6 space-y-3">
+                                                <div class="py-6 pr-6 space-y-3">
                                                     <!-- Business Owner -->
                                                     <label for="addbrgybusspermowner" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Business Owner</label>
                                                     <input type="text" name="addbrgybusspermowner" id="addbrgybusspermowner" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter Business Owner Name" required>
@@ -240,15 +241,15 @@
                                     <td class="px-6 py-2">
                                         <!-- Update Business Modal -->
                                         <button data-modal-target="editbusiness-modal" data-modal-toggle="editbusiness-modal" class="inline-flex items-center hover:bg-blue-400 focus:ring-2 focus:outline-none  focus:ring-blue-500" title="Edit Business">
-                                            <x-fas-square-pen class="w-4 h-4  fill-blue-600" />
+                                            <x-fas-square-pen class="w-4  fill-blue-600" />
                                         </button>
-                                        <!-- View Business Modal -->
-                                        <button data-modal-target="viewbusiness-modal" data-modal-toggle="viewbusiness-modal" class="inline-flex items-center hover:bg-green-400 focus:ring-2 focus:outline-none  focus:ring-green-500" title="View Business">
-                                            <x-fas-eye class="w-4 h-4  fill-green-600" />
+                                        <!-- Generate Business Modal -->
+                                        <button data-modal-target="generatebusinesspermit-modal" data-modal-toggle="generatebusinesspermit-modal" class="inline-flex items-center hover:bg-green-400 focus:ring-2 focus:outline-none  focus:ring-green-500" title="Generate Business Permit">
+                                            <x-fas-square-poll-horizontal class="w-4 fill-green-600" />
                                         </button>
                                         <!-- Delete Business Modal -->
                                         <button data-modal-target="deletebusiness-modal" data-modal-toggle="deletebusiness-modal" class="inline-flex items-center hover:bg-red-400 focus:ring-2 focus:outline-none  focus:ring-red-500" title="Delete Business">
-                                            <x-fas-square-xmark class=" w-4 h-4 fill-red-600" />
+                                            <x-fas-square-xmark class=" w-4 fill-red-600" />
                                         </button>
                                     </td>
                                 </tr>
@@ -276,7 +277,7 @@
                                     <form class="space-y-6" action="#">
                                         <div class="grid grid-cols-2">
                                             <div class="col-span-1">
-                                                <div class="p-6 space-y-3">
+                                                <div class="py-6 px-6 space-y-3">
                                                     <!-- Business Name -->
                                                     <label for="editbrgybusspermbusinessname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Business Name</label>
                                                     <input type="text" name="editbrgybusspermbusinessname" id="editbrgybusspermbusinessname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Siomai Incorporated" required>
@@ -300,7 +301,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-span-1">
-                                                <div class="p-6 space-y-3">
+                                                <div class="py-6 pr-6 space-y-3">
                                                     <!-- Business Owner -->
                                                     <label for="editbrgybusspermowner" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Business Owner</label>
                                                     <input type="text" name="editbrgybusspermowner" id="editbrgybusspermowner" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Monkey D. Luffy" required>

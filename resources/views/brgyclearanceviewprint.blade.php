@@ -56,8 +56,8 @@
                     <p class="text-base text-center font-bold"> BARANGAY CLEARANCE</p>
 
                     <p class="text-xs pt-3 px-5 pb-2"> TO WHOM IT MAY CONCERN, </p>
-                    <p class="text-xs px-5 indent-8 pb-5"> This is to CERTIFY that the person whose name
-                        appearing herein has requested a BARANGAY CLEARANCE from the
+                    <p class="text-xs px-5 indent-8 pb-5"> This is to <strong>CERTIFY</strong> that the person whose name
+                        appearing herein has requested a <strong>BARANGAY CLEARANCE</strong> from the
                         office and the result(s) is/are listed below:
                     </p>
 
@@ -146,14 +146,14 @@
                         </div>
                     </div>
 
-                    <p class="text-xs px-5 indent-8 pb-5"> This is to CERTIFY further that Monkey D. Luffy,
+                    <p class="text-xs px-5 indent-8 pb-5"> This is to <strong>CERTIFY</strong> further that <strong>Monkey D. Luffy</strong>,
                         has no derogatory record filed and/or pending case against him/her before this office.
                         Provided however, that any complaint against his/her application and purpose found valid
                         shall be sufficient cause for revocation of this clearance.
                     </p>
 
-                    <p class="text-xs px-5 indent-8 pb-5"> The CLEARANCE is issued for Water Connection
-                        from Metro Tagoloan Water District (MTWD).
+                    <p class="text-xs px-5 indent-8 pb-5"> The <strong>CLEARANCE</strong> is issued for <strong>Water Connection
+                        from Metro Tagoloan Water District (MTWD)</strong>.
                     </p>
 
                     <div class="grid grid-cols-12 px-5 pb-5">
@@ -188,7 +188,7 @@
                     <p class="text-xs font-semibold indent-8">Barangay Clearance Issuance, etc.</p>
                 </div>
                 <div class="col-span-2 py-1 flex justify-end pr-3">
-                <button type="button" onclick="window.print()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mr-3">PDF</button>
+                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mr-3">PDF</button>
                 <button type="button" onclick="window.print()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Print</button>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <!-- add Resident -->
-<div wire:ignore.self id="addresident-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full h-full overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+<div wire:ignore.self id="addresident-modal"  tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full h-full overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
     <div class="relative w-full h-full">
         <!-- Modal content -->
         <div class="relative bg-gray-200 dark:bg-gray-700">
@@ -66,6 +66,7 @@
 
                         <!-- Right Side -->
                         <!-- About Section -->
+                        <form class="space-y-6" wire:submit.prevent="store()">
                         <div class="bg-white p-5 shadow-lg rounded-lg mx-3 ">
                             <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
                                 <span clas="text-green-500">
@@ -84,6 +85,7 @@
                                     <div class="pb-5 col-span-2">
                                         <label for="middlename" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Middle Name</label>
                                         <input wire:model.defer="middlename" type="name" name="middlename" id="middlename" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="A." required>
+                                        @error('middlename') <span class="error">{{ $message }}</span> @enderror
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="lastname" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
@@ -278,10 +280,11 @@
                             <!-- Modal footer -->
                             <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600 justify-end">
                                 <button data-modal-hide="addresident-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
-                                <button data-modal="addresident-modal" type="button" wire:click.prevent="store()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save</button>
+                                <button  type="submit"  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save</button>
                             </div>
 
                         </div>
+                        </form>
 
                     </div>
                 </div>

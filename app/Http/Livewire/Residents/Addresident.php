@@ -80,6 +80,8 @@ class Addresident extends Component
                 'officeaddress' => $this->officeaddress,
                 'employer' => $this->employer,
                 'employercontact' => $this->employercontact,]);
+
+                $this->dispatchBrowserEvent('resident-added');
                 
     }
 }

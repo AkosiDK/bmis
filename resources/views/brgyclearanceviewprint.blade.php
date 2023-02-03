@@ -182,21 +182,25 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-12 mx-5 pb-5">
-                <div class="col-span-12 border-2 border-slate-200 pb-2 px-3">
+            <div class="grid grid-cols-12 mx-5 mb-5 border-2 border-slate-200">
+                <div class="col-span-10  pb-2 px-3">
                     <p class="text-xs font-semibold">Remarks:</p>
                     <p class="text-xs font-semibold indent-8">Barangay Clearance Issuance, etc.</p>
                 </div>
-                
+                <div class="col-span-2 py-1 flex justify-end pr-3">
+                <button type="button" onclick="window.print()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mr-3">PDF</button>
+                <button type="button" onclick="window.print()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Print</button>
+                </div>
             </div>
 
         </div>
     </div>
 
-
+    <div class="py-1">
+        <hr class="text-black">
+    </div>
 
     <div class="mx-auto print:hidden">
         <p class="text-center text-xs">@ 2023 | Barangay Monitoring Information System</p>
-        
     </div>
 </x-app-layout>

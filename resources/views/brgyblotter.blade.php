@@ -149,12 +149,12 @@
                         </div>
                         <div class="col-span-6 pt-2 justify-self-start items-start flex px-5 gap-x-2">
                             <!-- Download ALL record by PDF  -->
-                            <button class="text-white inline-flex items-center bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-full text-sm px-4 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700" title="Download PDF">
+                            <button class="text-white inline-flex items-center bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-400 font-medium rounded-full text-sm px-4 py-2 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-700" title="Download PDF">
                                 <x-fas-file-pdf class="w-4 h-4 mr-1" fill="white" />
                                 Download
                             </button>
                             <!-- Print ALL record -->
-                            <button class="text-white inline-flex items-center bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-full text-sm px-4 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700" title="Print PDF">
+                            <button class="text-white inline-flex items-center bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-400 font-medium rounded-full text-sm px-4 py-2 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-700" title="Print PDF">
                                 <x-fas-print class="w-4 h-4 mr-1" fill="white" />
                                 Print Records
                             </button>
@@ -168,6 +168,96 @@
                         </div>
                     </div>
                 </div>
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-white uppercase bg-gray-800 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                <div class="flex items-center">
+                                    Complainant
+                                    <a href="#">
+                                        <x-fas-sort class="w-3 h-3" />
+                                    </a>
+                                </div>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <div class="flex items-center">
+                                    Respondent
+                                    <a href="#">
+                                        <x-fas-sort class="w-3 h-3" />
+                                    </a>
+                                </div>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <div class="flex items-center">
+                                    Victim(s)
+                                    <a href="#">
+                                        <x-fas-sort class="w-3 h-3" />
+                                    </a>
+                                </div>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <div class="flex items-center">
+                                    Incident
+                                    <a href="#">
+                                        <x-fas-sort class="w-3 h-3" />
+                                    </a>
+                                </div>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <div class="flex items-center">
+                                    Status
+                                    <a href="#">
+                                        <x-fas-sort class="w-3 h-3" />
+                                    </a>
+                                </div>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <div class="flex items-center">
+                                    Action
+                                    <a href="#">
+                                        <x-fas-sort class="w-3 h-3" />
+                                    </a>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="bg-gray-100 dark:bg-gray-800">
+                            <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                Monkey D. Luffy
+                            </td>
+                            <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                Kaido D. Beast
+                            </td>
+                            <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                Straw Hat Group
+                            </td>
+                            <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                Ninakaw ang mansinitas treasure.
+                            </td>
+                            <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                <span class="bg-red-600 text-white text-xs font-medium items-center file:mr-2 px-2.5 py-0.5 rounded-full" title="Blotter is Active">
+                                    Active
+                                </span>
+                            </td>
+                            <td class="px-6 py-2">
+                                <!-- Update Blotter Modal -->
+                                <button data-modal-target="editblotter-modal" data-modal-toggle="editblotter-modal" class="inline-flex items-center hover:bg-blue-400 focus:ring-2 focus:outline-none  focus:ring-blue-500" title="Edit Blotter">
+                                    <x-fas-square-pen class="w-4  fill-blue-600" />
+                                </button>
+                                <!-- Generate Blotter Modal -->
+                                <button data-modal-target="generateblotter-modal" data-modal-toggle="generateblotter-modal" class="inline-flex items-center hover:bg-green-400 focus:ring-2 focus:outline-none  focus:ring-green-500" title="Generate Blotter">
+                                    <x-fas-square-poll-horizontal class="w-4 fill-green-600" />
+                                </button>
+                                <!-- Delete Blotter Modal -->
+                                <button data-modal-target="deleteblotter-modal" data-modal-toggle="deleteblotter-modal" class="inline-flex items-center hover:bg-red-400 focus:ring-2 focus:outline-none  focus:ring-red-500" title="Delete Blotter">
+                                    <x-fas-square-xmark class=" w-4 fill-red-600" />
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="bg-white p-4 rounded-lg dark:bg-gray-800 hidden" id="activeblotter" role="tabpanel" aria-labelledby="activeblotter-tab">
                 SAMPLE2

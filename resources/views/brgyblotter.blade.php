@@ -129,19 +129,56 @@
         </div>
 
         <div id="myTabContent">
-            <div class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800" id="totalblotter" role="tabpanel" aria-labelledby="totalblotter-tab">
-                SAMPLE1
+            <div class="bg-white rounded-lg dark:bg-gray-800" id="totalblotter" role="tabpanel" aria-labelledby="totalblotter-tab">
+                <div class="relative overflow-x-auto">
+                    <div class="mx-auto pl-5 pb-2 pt-3 text-lg font-bold">Barangay Blotter Records</div>
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-3">
+                            <form class="pb-5 pl-5">
+                                <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search by name..." required>
+                                    <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-full text-sm px-4 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700" title="Search Name">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-span-6 pt-2 justify-self-start items-start flex px-5 gap-x-2">
+                            <!-- Download ALL record by PDF  -->
+                            <button class="text-white inline-flex items-center bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-full text-sm px-4 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700" title="Download PDF">
+                                <x-fas-file-pdf class="w-4 h-4 mr-1" fill="white" />
+                                Download
+                            </button>
+                            <!-- Print ALL record -->
+                            <button class="text-white inline-flex items-center bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-full text-sm px-4 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700" title="Print PDF">
+                                <x-fas-print class="w-4 h-4 mr-1" fill="white" />
+                                Print Records
+                            </button>
+                        </div>
+                        <div class="col-span-3 pt-2 justify-self-end items-start flex px-5">
+                            <!-- Add Blotter Modal -->
+                            <button data-modal-target="addblotter-modal" data-modal-toggle="addblotter-modal" class="text-white inline-flex items-center bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-full text-sm px-4 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700" title="Add Blotter">
+                                <x-fas-plus class="w-4 h-4 mr-1" fill="white" />
+                                Blotter
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800 hidden" id="activeblotter" role="tabpanel" aria-labelledby="activeblotter-tab">
+            <div class="bg-white p-4 rounded-lg dark:bg-gray-800 hidden" id="activeblotter" role="tabpanel" aria-labelledby="activeblotter-tab">
                 SAMPLE2
             </div>
-            <div class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800 hidden" id="settledblotter" role="tabpanel" aria-labelledby="settledblotter-tab">
+            <div class="bg-white p-4 rounded-lg dark:bg-gray-800 hidden" id="settledblotter" role="tabpanel" aria-labelledby="settledblotter-tab">
                 SAMPLE3
             </div>
-            <div class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800 hidden" id="scheduledblotter" role="tabpanel" aria-labelledby="scheduledblotter-tab">
+            <div class="bg-white p-4 rounded-lg dark:bg-gray-800 hidden" id="scheduledblotter" role="tabpanel" aria-labelledby="scheduledblotter-tab">
                 SAMPLE4
             </div>
-            <div class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800 hidden" id="unscheduledblotter" role="tabpanel" aria-labelledby="unscheduledblotter-tab">
+            <div class="bg-white p-4 rounded-lg dark:bg-gray-800 hidden" id="unscheduledblotter" role="tabpanel" aria-labelledby="unscheduledblotter-tab">
                 SAMPLE5
             </div>
         </div>

@@ -94,11 +94,11 @@
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-11">
-                                    <p class="font-bold text-white text-start" style="font-size:25px;">1,345</p>
+                                    <p class="font-bold text-white text-start dashboardcounter" data-target="8000" style="font-size:25px;">0</p>
                                     <p class="text-white text-start">POPULATION</p>
                                 </div>
                                 <div>
-                                <x-fas-user-large fill="white" class="w-8 h-8" />
+                                    <x-fas-user-large fill="white" class="w-8 h-8" />
                                 </div>
                             </div>
                             <div class="grid grid-cols-12">
@@ -115,11 +115,11 @@
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-11">
-                                    <p class="font-bold text-white text-start" style="font-size:25px;">875</p>
+                                    <p class="font-bold text-white text-start dashboardcounter" data-target="7000" style="font-size:25px;">0</p>
                                     <p class="text-white text-start">VOTERS</p>
                                 </div>
                                 <div>
-                                <x-fas-user-check fill="white" class="w-8 h-8" />
+                                    <x-fas-user-check fill="white" class="w-8 h-8" />
                                 </div>
                             </div>
                             <div class="grid grid-cols-12">
@@ -136,11 +136,11 @@
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-11">
-                                    <p class="font-bold text-white text-start" style="font-size:25px;">470</p>
+                                    <p class="font-bold text-white text-start dashboardcounter" data-target="6000" style="font-size:25px;">0</p>
                                     <p class="text-white text-start">NON VOTERS</p>
                                 </div>
                                 <div>
-                                <x-fas-user-xmark fill="white" class="w-8 h-8" />
+                                    <x-fas-user-xmark fill="white" class="w-8 h-8" />
 
                                 </div>
                             </div>
@@ -158,11 +158,11 @@
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-11">
-                                    <p class="font-bold text-white text-start" style="font-size:25px;">576</p>
+                                    <p class="font-bold text-white text-start dashboardcounter" data-target="5000" style="font-size:25px;">0</p>
                                     <p class="text-white text-start">SENIOR CITIZEN</p>
                                 </div>
                                 <div>
-                                <x-fas-user-group fill="white" class="w-8 h-8" />
+                                    <x-fas-user-group fill="white" class="w-8 h-8" />
                                 </div>
                             </div>
                             <div class="grid grid-cols-12">
@@ -182,11 +182,11 @@
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-11">
-                                    <p class="font-bold text-white text-start" style="font-size:25px;">35</p>
+                                    <p class="font-bold text-white text-start dashboardcounter" data-target="4000" style="font-size:25px;">0</p>
                                     <p class="text-white text-start">ESTABLISHMENT</p>
                                 </div>
                                 <div>
-                                <x-fas-building fill="white" class="w-8 h-8" />
+                                    <x-fas-building fill="white" class="w-8 h-8" />
                                 </div>
                             </div>
                             <div class="grid grid-cols-12">
@@ -203,11 +203,11 @@
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-11">
-                                    <p class="font-bold text-white text-start" style="font-size:25px;">175</p>
+                                    <p class="font-bold text-white text-start dashboardcounter" data-target="3000" style="font-size:25px;">0</p>
                                     <p class="text-white text-start">PWD</p>
                                 </div>
                                 <div>
-                                <x-fas-wheelchair fill="white" class="w-8 h-8" />
+                                    <x-fas-wheelchair fill="white" class="w-8 h-8" />
                                 </div>
                             </div>
                             <div class="grid grid-cols-12">
@@ -224,11 +224,11 @@
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-11">
-                                    <p class="font-bold text-white text-start" style="font-size:25px;">50</p>
+                                    <p class="font-bold text-white text-start dashboardcounter" data-target="2000" style="font-size:25px;">0</p>
                                     <p class="text-white text-start">BLOTTER</p>
                                 </div>
                                 <div>
-                                <x-fas-database  fill="white" class="w-8 h-8" />
+                                    <x-fas-database fill="white" class="w-8 h-8" />
 
                                 </div>
                             </div>
@@ -246,11 +246,11 @@
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-11">
-                                    <p class="font-bold text-white text-start" style="font-size:25px;">3,755</p>
+                                    <p class="font-bold text-white text-start dashboardcounter" data-target="1000" style="font-size:25px;">0</p>
                                     <p class="text-white text-start">REVENUE</p>
                                 </div>
                                 <div>
-                                <x-fas-peso-sign fill="white" class="w-8 h-8" />
+                                    <x-fas-peso-sign fill="white" class="w-8 h-8" />
 
                                 </div>
                             </div>
@@ -277,4 +277,27 @@
     <div class="mx-auto pt-2">
         <p class="text-center text-xs">@ 2023 | Barangay Monitoring Information System</p>
     </div>
+
+    <script>
+        const counters = document.querySelectorAll('.dashboardcounter');
+        const speed = 200;
+
+        counters.forEach(dashboardcounter => {
+            const updateCount = () => {
+                const target = +dashboardcounter.getAttribute('data-target');
+                const count = +dashboardcounter.textContent;
+
+                const inc = target / speed;
+
+                if (count < target) {
+                    dashboardcounter.textContent = Math.ceil(count + inc);
+                    setTimeout(updateCount, 1);
+                } else {
+                    count.textContent = target;
+                }
+            }
+
+            updateCount();
+        });
+    </script>
 </x-app-layout>

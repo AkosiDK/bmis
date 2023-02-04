@@ -20,7 +20,7 @@
                                 <div class="mx-auto  p-5" style="width: 100; height:150px;">
                                     <div class="grid grid-cols-12">
                                         <div class="col-span-11">
-                                            <p class="font-bold text-white text-start counter" data-target="5000" style="font-size:25px;">0</p>
+                                            <p class="font-bold text-white text-start blottercounter" data-target="5000" style="font-size:25px;">0</p>
                                             <p class="text-white text-start">BLOTTERS</p>
                                         </div>
                                         <div>
@@ -42,7 +42,7 @@
                                 <div class="mx-auto  p-5" style="width: 100; height:150px;">
                                     <div class="grid grid-cols-12">
                                         <div class="col-span-11">
-                                            <p class="font-bold text-white text-start counter" data-target="4000" style="font-size:25px;">0</p>
+                                            <p class="font-bold text-white text-start blottercounter" data-target="4000" style="font-size:25px;">0</p>
                                             <p class="text-white text-start">ACTIVE</p>
                                         </div>
                                         <div>
@@ -64,7 +64,7 @@
                                 <div class="mx-auto  p-5" style="width: 100; height:150px;">
                                     <div class="grid grid-cols-12">
                                         <div class="col-span-11">
-                                            <p class="font-bold text-white text-start counter" data-target="3000" style="font-size:25px;">0</p>
+                                            <p class="font-bold text-white text-start blottercounter" data-target="3000" style="font-size:25px;">0</p>
                                             <p class="text-white text-start">SETTLED</p>
                                         </div>
                                         <div>
@@ -86,7 +86,7 @@
                                 <div class="mx-auto  p-5" style="width: 100; height:150px;">
                                     <div class="grid grid-cols-12">
                                         <div class="col-span-11">
-                                            <p class="font-bold text-white text-start counter" data-target="2000" style="font-size:25px;">0</p>
+                                            <p class="font-bold text-white text-start blottercounter" data-target="2000" style="font-size:25px;">0</p>
                                             <p class="text-white text-start">SCHEDULED</p>
                                         </div>
                                         <div>
@@ -108,7 +108,7 @@
                                 <div class="mx-auto  p-5" style="width: 100; height:150px;">
                                     <div class="grid grid-cols-12">
                                         <div class="col-span-11">
-                                            <p class="font-bold text-white text-start counter" data-target="1000" style="font-size:25px;">0</p>
+                                            <p class="font-bold text-white text-start blottercounter" data-target="1000" style="font-size:25px;">0</p>
                                             <p class="text-white text-start">UNSCHEDULED</p>
                                         </div>
                                         <div>
@@ -156,18 +156,18 @@
     </div>
 
     <script>
-        const counters = document.querySelectorAll('.counter');
+        const counters = document.querySelectorAll('.blottercounter');
         const speed = 200;
 
-        counters.forEach(counter => {
+        counters.forEach(blottercounter => {
             const updateCount = () => {
-                const target = +counter.getAttribute('data-target');
-                const count = +counter.textContent;
+                const target = +blottercounter.getAttribute('data-target');
+                const count = +blottercounter.textContent;
 
                 const inc = target / speed;
 
                 if (count < target) {
-                    counter.textContent = Math.ceil(count + inc);
+                    blottercounter.textContent = Math.ceil(count + inc);
                     setTimeout(updateCount, 1);
                 } else {
                     count.textContent = target;

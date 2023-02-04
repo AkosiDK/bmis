@@ -56,9 +56,9 @@ Route::get('/brgybusinesspermitviewprint', function () {
     return view('brgybusinesspermitviewprint');
 })->middleware(['auth', 'verified'])->name('brgybusinesspermitviewprint');
 
-Route::get('/blotters', function () {
-    return view('blotters');
-})->middleware(['auth', 'verified'])->name('blotters');
+Route::get('/brgyblotter', function () {
+    return view('brgyblotter');
+})->middleware(['auth', 'verified'])->name('brgyblotter');
 
 Route::get('/transactions', function () {
     return view('transactions');

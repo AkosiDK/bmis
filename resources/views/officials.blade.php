@@ -239,7 +239,7 @@
                                     <td class="px-6 py-2">
                                         <!-- Update Modal -->
                                         <button data-modal-target="medium-modal" data-modal-toggle="medium-modal" class="inline-flex items-center hover:bg-blue-400 focus:ring-2 focus:outline-none  focus:ring-blue-500" title="Edit Official">
-                                            <x-fas-square-pen class="w-5 h-5  fill-blue-600" />
+                                            <x-fas-square-pen class="w-5  fill-blue-600" />
                                         </button>
                                         <!-- Update Modal -->
                                         <div id="medium-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
@@ -338,7 +338,7 @@
 
                                         <!-- Delete Default Modal -->
                                         <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="inline-flex items-center hover:bg-red-400 focus:ring-2 focus:outline-none  focus:ring-red-500" title="Delete Official">
-                                            <x-fas-square-xmark class=" w-5 h-5 fill-red-600" />
+                                            <x-fas-square-xmark class=" w-5 fill-red-600" />
                                         </button>
 
                                         <!-- Delete Default Modal -->

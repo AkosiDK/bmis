@@ -241,15 +241,15 @@
                                     <td class="px-6 py-2">
                                         <!-- Update Business Modal -->
                                         <button data-modal-target="editbusiness-modal" data-modal-toggle="editbusiness-modal" class="inline-flex items-center hover:bg-blue-400 focus:ring-2 focus:outline-none  focus:ring-blue-500" title="Edit Business">
-                                            <x-fas-square-pen class="w-4  fill-blue-600" />
+                                            <x-fas-square-pen class="w-5  fill-blue-600" />
                                         </button>
                                         <!-- Generate Business Modal -->
                                         <button data-modal-target="generatebusinesspermit-modal" data-modal-toggle="generatebusinesspermit-modal" class="inline-flex items-center hover:bg-green-400 focus:ring-2 focus:outline-none  focus:ring-green-500" title="Generate Business Permit">
-                                            <x-fas-square-poll-horizontal class="w-4 fill-green-600" />
+                                            <x-fas-square-poll-horizontal class="w-5 fill-green-600" />
                                         </button>
                                         <!-- Delete Business Modal -->
                                         <button data-modal-target="deletebusiness-modal" data-modal-toggle="deletebusiness-modal" class="inline-flex items-center hover:bg-red-400 focus:ring-2 focus:outline-none  focus:ring-red-500" title="Delete Business">
-                                            <x-fas-square-xmark class=" w-4 fill-red-600" />
+                                            <x-fas-square-xmark class=" w-5 fill-red-600" />
                                         </button>
                                     </td>
                                 </tr>

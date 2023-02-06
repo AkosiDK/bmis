@@ -87,8 +87,8 @@
             </div>
         </div>
 
-        <div class="mx-auto pt-5">
-            <div class="grid grid-cols-4 gap-5">
+        <div class="mx-auto pt-3">
+            <div class="grid grid-cols-4 gap-3">
                 <div class="rounded-lg shadow-xl col-span-1">
                     <button class="rounded-lg bg-blue-600 hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring focus:ring-blue-500">
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
@@ -176,7 +176,7 @@
 
             </div>
 
-            <div class="grid grid-cols-4 gap-5 pt-5">
+            <div class="grid grid-cols-4 gap-3 pt-3">
                 <div class="rounded-lg shadow-xl col-span-1">
                     <button class="rounded-lg bg-sky-400 hover:bg-sky-500 active:bg-sky-600 focus:outline-none focus:ring focus:ring-sky-300">
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
@@ -270,11 +270,7 @@
 
     </div>
 
-    <div class="pt-5">
-        <hr>
-    </div>
-
-    <div class="mx-auto pt-2">
+    <div class="mx-auto py-2">
         <p class="text-center text-xs">@ 2023 | Barangay Monitoring Information System</p>
     </div>
 

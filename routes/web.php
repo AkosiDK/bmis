@@ -60,6 +60,14 @@ Route::get('/brgyblotter', function () {
     return view('brgyblotter');
 })->middleware(['auth', 'verified'])->name('brgyblotter');
 
+Route::get('/brgyblotterviewprint', function () {
+    return view('brgyblotterviewprint');
+})->middleware(['auth', 'verified'])->name('brgyblotterviewprint');
+
+Route::get('/brgyblottersettledviewprint', function () {
+    return view('brgyblottersettledviewprint');
+})->middleware(['auth', 'verified'])->name('brgyblottersettledviewprint');
+
 Route::get('/transactions', function () {
     return view('transactions');
 })->middleware(['auth', 'verified'])->name('transactions');

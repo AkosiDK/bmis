@@ -347,7 +347,7 @@
                 </div>
 
                 <div class="grid grid-cols-12 gap-x-5 hidden" id="activeblotter" role="tabpanel" aria-labelledby="activeblotter-tab">
-                <div class="col-span-12">
+                    <div class="col-span-12">
                         <div class="bg-white dark:bg-gray-800 rounded-lg">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-9 py-6 px-5">
@@ -558,7 +558,7 @@
                 </div>
 
                 <div class="grid grid-cols-12 gap-x-5 hidden" id="settledblotter" role="tabpanel" aria-labelledby="settledblotter-tab">
-                <div class="col-span-12">
+                    <div class="col-span-12">
                         <div class="bg-white dark:bg-gray-800 rounded-lg">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-9 py-6 px-5">
@@ -769,7 +769,7 @@
                 </div>
 
                 <div class="grid grid-cols-12 gap-x-5 hidden" id="scheduledblotter" role="tabpanel" aria-labelledby="scheduledblotter-tab">
-                <div class="col-span-12">
+                    <div class="col-span-12">
                         <div class="bg-white dark:bg-gray-800 rounded-lg">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-9 py-6 px-5">
@@ -980,7 +980,7 @@
                 </div>
 
                 <div class="grid grid-cols-12 gap-x-5 hidden" id="unscheduledblotter" role="tabpanel" aria-labelledby="unscheduledblotter-tab">
-                <div class="col-span-12">
+                    <div class="col-span-12">
                         <div class="bg-white dark:bg-gray-800 rounded-lg">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-9 py-6 px-5">
@@ -1186,18 +1186,13 @@
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
-
     </div>
-
-
-
     </div>
 
     <div class="mx-auto py-2">

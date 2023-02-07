@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="text-lg text-blue-100 md:text-2xl">
-            Barangay Trasactions
+            Barangay Resident Request
         </h2>
     </x-slot>
     <x-slot name="breadcrumb">

@@ -32,9 +32,9 @@ Route::get('/residents', function () {
     return view('residents');
 })->middleware(['auth', 'verified'])->name('residents');
 
-Route::get('/transactions', function () {
-    return view('transactions');
-})->middleware(['auth', 'verified'])->name('transactions');
+Route::get('/residentrequest', function () {
+    return view('residentrequest');
+})->middleware(['auth', 'verified'])->name('residentrequest');
 
 Route::get('/settings', function () {
     return view('settings');

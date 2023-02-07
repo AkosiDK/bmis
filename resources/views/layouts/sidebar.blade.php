@@ -1,8 +1,8 @@
 <!-- Sidebar Menu -->
 <div :class="{ '!translate-x-0': open }" class="fixed top-0 left-0 z-20 w-9/12 h-screen overflow-y-auto transition duration-300 ease-in-out transform -translate-x-full bg-gray-800 shadow-2xl sm:w-64 md:translate-x-0">
     <!-- Sidebar Header -->
-    <div class="flex items-center h-20 ">
-        <div class="inline-flex items-center justify-center w-full md:justify-center ">
+    <div class="flex items-center h-20">
+        <div class="inline-flex items-center justify-center w-full md:justify-center">
             <!-- Hamburger -->
             <a href="#" @click="open = !open" class="absolute right-0 top-0 mr-1.5 mt-1.5 inline-flex p-1 items-center justify-center rounded-md hover:bg-blue-100 md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 stroke-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -10,17 +10,16 @@
                 </svg>
             </a>
             <!-- Logo -->
-            <a href="#">
-                <h2 class="text-xl font-extrabold md:text-2xl text-white">{{ config('app.name', 'Laravel') }}</h2>
-            </a>
+            <img src="{{ asset('img/logo.png') }}" alt="logo" class="inline-block w-10 px-1"/>
+            <h2 class="text-xl font-extrabold text-white"><a href="#"> {{ config('app.name', 'Laravel') }}</a></h2>
         </div>
     </div>
     <!-- Profile Section -->
     <div class="divide-y divide-gray-100 divide-solid">
         <div class="p-5 text-center">
             <!-- Profile Picture -->
-            <a href="" class="inline-block w-auto p-2 mb-4 bg-blue-100 rounded-full">
-                <img src="{{ asset('img/user.jpeg') }}" alt="" class="object-cover object-top w-32 h-32 align-top rounded-full">
+            <a href="" class="inline-block w-auto p-2 mb-4 border-2 border-blue-600 rounded-full">
+                <img src="{{ asset('img/brgylogo.png') }}" alt="" class="object-cover object-top w-32 h-32 align-top rounded-full">
             </a>
             <!-- Profile Info -->
             <div>
@@ -65,54 +64,6 @@
             <p class="text-white">{{ __('Barangay Residents') }}</p>
         </x-sidebar-nav-link>
 
-
-        <div aria-controls="dropdown-example" data-collapse-toggle="dropdown-example" sidebar-toggle-item class="active:bg-blue-600 cursor-pointer">
-            <x-sidebar-nav-link>
-                <x-slot name="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-4" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    <span class="text-white mr-4">Barangay Certificates </span>
-                    <x-fas-sort-down sidebar-toggle-item class="w-4 h-4 fill-white inline" />
-                </x-slot>
-            </x-sidebar-nav-link>
-        </div>
-
-        <ul id="dropdown-example" class="hidden">
-            <x-sidebar-nav-link :href="route('brgyclearance')" :active="request()->routeIs('brgyclearance')">
-                <li>
-                    <x-slot name="icon">
-                        <p class="text-white flex items-center pl-11 group">{{ __('Barangay Clearance') }}</p>
-                    </x-slot>
-                </li>
-            </x-sidebar-nav-link>
-            <x-sidebar-nav-link :href="route('brgyindigency')" :active="request()->routeIs('brgyindigency')">
-                <li>
-                    <x-slot name="icon">
-                        <p class="text-white flex items-center pl-11 group">{{ __('Barangay Indigency') }}</p>
-                    </x-slot>
-                </li>
-            </x-sidebar-nav-link>
-            <x-sidebar-nav-link :href="route('brgybusinesspermit')" :active="request()->routeIs('brgybusinesspermit')">
-                <li>
-                    <x-slot name="icon">
-                        <p class="text-white flex items-center pl-11 group">{{ __('Barangay Business Permit') }}</p>
-                    </x-slot>
-                </li>
-            </x-sidebar-nav-link>
-        </ul>
-
-        <x-sidebar-nav-link :href="route('brgyblotter')" :active="request()->routeIs('brgyblotter')">
-            <x-slot name="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-4" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-            </x-slot>
-            <p class="text-white">{{ __('Blotter Records') }}</p>
-        </x-sidebar-nav-link>
-
         <x-sidebar-nav-link :href="route('transactions')" :active="request()->routeIs('transactions')">
             <x-slot name="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-4" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
@@ -121,16 +72,6 @@
                 </svg>
             </x-slot>
             <p class="text-white">{{ __('Barangay Transactions') }}</p>
-        </x-sidebar-nav-link>
-
-        <x-sidebar-nav-link :href="route('households')" :active="request()->routeIs('households')">
-            <x-slot name="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-4" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-            </x-slot>
-            <p class="text-white">{{ __('Households') }}</p>
         </x-sidebar-nav-link>
 
         <x-sidebar-nav-link :href="route('settings')" :active="request()->routeIs('settings')">

@@ -13,82 +13,7 @@
 
     <div class="">
         <div class="mx-auto">
-            <div class="bg-white overflow-hidden sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    <div class="grid grid-cols-4 gap-5">
-                        <div class="rounded-lg shadow-xl col-span-3">
-                            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                            <script type="text/javascript">
-                                google.charts.load('current', {
-                                    'packages': ['corechart']
-                                });
-                                google.charts.setOnLoadCallback(drawChart);
-
-                                function drawChart() {
-                                    var data = google.visualization.arrayToDataTable([
-                                        ['Day', 'Brgy. Clearane', 'Indigency Cert.', 'Residency Cert.', 'Business Permit', 'Others'],
-                                        ['Monday', 999, 899, 799, 699, 599],
-                                        ['Tuesday', 1, 1, 1, 1, 1],
-                                        ['Wednesday', 999, 899, 799, 699, 599],
-                                        ['Thursday', 1, 1, 1, 1, 1],
-                                        ['Friday', 999, 899, 799, 699, 599],
-                                    ]);
-
-                                    var options = {
-                                        curveType: 'function',
-                                        legend: {
-                                            position: 'top'
-
-                                        }
-                                    };
-
-                                    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-                                    chart.draw(data, options);
-                                }
-                            </script>
-                            <div class="mx-auto pt-6 pl-12 text-lg font-bold">Weekly Revenue Chart</div>
-                            <div id="curve_chart" style="width: 100; height:350px;" class="mx-auto"></div>
-                        </div>
-                        <div class="rounded-lg shadow-xl my-auto col-span-1">
-                            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                            <script type="text/javascript">
-                                google.charts.load("current", {
-                                    packages: ["corechart"]
-                                });
-                                google.charts.setOnLoadCallback(drawChart);
-
-                                function drawChart() {
-                                    var data = google.visualization.arrayToDataTable([
-                                        ['Day', 'Revenue'],
-                                        ['Brgy.Clearance', 100],
-                                        ['Indigency Cert.', 100],
-                                        ['Residency Cert.', 100],
-                                        ['Business Permit', 100],
-                                        ['Others', 100]
-                                    ]);
-
-                                    var options = {
-                                        pieHole: 0.1,
-                                        legend: {
-                                            position: 'top'
-                                        }
-                                    };
-
-                                    var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-                                    chart.draw(data, options);
-                                }
-                            </script>
-                            <div class="mx-auto pt-6 pl-12 text-lg font-bold">Total Weekly Revenue per Category</div>
-                            <div id="donutchart" style="width: 100; height:350px;" class="mx-auto"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mx-auto pt-3">
-            <div class="grid grid-cols-4 gap-3">
+            <div class="grid grid-cols-5 gap-3">
                 <div class="rounded-lg shadow-xl col-span-1">
                     <button class="rounded-lg bg-blue-600 hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring focus:ring-blue-500">
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
@@ -154,7 +79,7 @@
                 </div>
 
                 <div class="rounded-lg shadow-xl col-span-1">
-                    <button class="rounded-lg bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-400">
+                    <button class="rounded-lg bg-sky-500 hover:bg-sky-600 active:bg-sky-700 focus:outline-none focus:ring focus:ring-sky-400">
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-11">
@@ -174,32 +99,8 @@
                     </button>
                 </div>
 
-            </div>
-
-            <div class="grid grid-cols-4 gap-3 pt-3">
                 <div class="rounded-lg shadow-xl col-span-1">
-                    <button class="rounded-lg bg-sky-400 hover:bg-sky-500 active:bg-sky-600 focus:outline-none focus:ring focus:ring-sky-300">
-                        <div class="mx-auto  p-5" style="width: 100; height:150px;">
-                            <div class="grid grid-cols-12">
-                                <div class="col-span-11">
-                                    <p class="font-bold text-white text-start dashboardcounter" data-target="4000" style="font-size:25px;">0</p>
-                                    <p class="text-white text-start">ESTABLISHMENT</p>
-                                </div>
-                                <div>
-                                    <x-fas-building fill="white" class="w-8 h-8" />
-                                </div>
-                            </div>
-                            <div class="grid grid-cols-12">
-                                <div class="col-span-12">
-                                    <p class="text-white text-end text-xs pt-8 tracking-widest">Total Business Permit</p>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-
-                <div class="rounded-lg shadow-xl col-span-1">
-                    <button class="rounded-lg bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-400">
+                    <button class="rounded-lg bg-red-500 hover:bg-red-600 active:bg-red-700 focus:outline-none focus:ring focus:ring-red-400">
                         <div class="mx-auto  p-5" style="width: 100; height:150px;">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-11">
@@ -219,51 +120,9 @@
                     </button>
                 </div>
 
-                <div class="rounded-lg shadow-xl col-span-1">
-                    <button class="rounded-lg bg-red-500 hover:bg-red-600 active:bg-red-700 focus:outline-none focus:ring focus:ring-red-400">
-                        <div class="mx-auto  p-5" style="width: 100; height:150px;">
-                            <div class="grid grid-cols-12">
-                                <div class="col-span-11">
-                                    <p class="font-bold text-white text-start dashboardcounter" data-target="2000" style="font-size:25px;">0</p>
-                                    <p class="text-white text-start">BLOTTER</p>
-                                </div>
-                                <div>
-                                    <x-fas-database fill="white" class="w-8 h-8" />
-
-                                </div>
-                            </div>
-                            <div class="grid grid-cols-12">
-                                <div class="col-span-12">
-                                    <p class="text-white text-end text-xs pt-8 tracking-widest">Total Blotter</p>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-
-                <div class="rounded-lg shadow-xl col-span-1">
-                    <button class="rounded-lg bg-teal-500 hover:bg-teal-600 active:bg-teal-700 focus:outline-none focus:ring focus:ring-teal    -400">
-                        <div class="mx-auto  p-5" style="width: 100; height:150px;">
-                            <div class="grid grid-cols-12">
-                                <div class="col-span-11">
-                                    <p class="font-bold text-white text-start dashboardcounter" data-target="1000" style="font-size:25px;">0</p>
-                                    <p class="text-white text-start">REVENUE</p>
-                                </div>
-                                <div>
-                                    <x-fas-peso-sign fill="white" class="w-8 h-8" />
-
-                                </div>
-                            </div>
-                            <div class="grid grid-cols-12">
-                                <div class="col-span-12">
-                                    <p class="text-white text-end text-xs pt-8 tracking-widest">Total Revenue</p>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-
             </div>
+
+            
         </div>
 
 

@@ -1,5 +1,6 @@
+<div>
 <!-- add Resident -->
-<div wire:ignore.self id="addresident-modal"  tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full h-full overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+<div id="addresident-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full h-full overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
     <div class="relative w-full h-full">
         <!-- Modal content -->
         <div class="relative bg-gray-200 dark:bg-gray-700">
@@ -80,12 +81,10 @@
                                     <div class="pb-5 col-span-2">
                                         <label for="firstname" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
                                         <input wire:model.defer="firstname" type="name" name="firstname" id="firstname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Darryl Kaye" required>
-                                        @error('firstname') <span class="error">{{ $message }}</span> @enderror
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="middlename" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Middle Name</label>
                                         <input wire:model.defer="middlename" type="name" name="middlename" id="middlename" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="A." required>
-                                        @error('middlename') <span class="error">{{ $message }}</span> @enderror
                                     </div>
                                     <div class="pb-5 col-span-2">
                                         <label for="lastname" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
@@ -178,33 +177,25 @@
                                     <div class="pb-5">
                                         <label for="region" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Region</label>
                                         <select id="region" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                            
-                                            <option>Region</option>
-                                            
+                                           
                                         </select>
                                     </div>
                                     <div class="pb-5">
                                         <label for="province" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Province</label>
                                         <select id="province" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                            <option selected>Choose a Province</option>
-                                            <option>Province 1</option>
-                                            <option>Province 2</option>
+                                            
                                         </select>
                                     </div>
                                     <div class="pb-5">
                                         <label for="city" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">City</label>
                                         <select id="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                            <option selected>Choose a City</option>
-                                            <option>City 1</option>
-                                            <option>City 2</option>
+                                            
                                         </select>
                                     </div>
                                     <div class="pb-5">
                                         <label for="barangay" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Barangay</label>
                                         <select id="barangay" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                            <option selected>Choose a Barangay</option>
-                                            <option>Barangay 1</option>
-                                            <option>Barangay 2</option>
+                                            
                                         </select>
                                     </div>
                                     <div class="pb-5 col-span-2">
@@ -275,11 +266,9 @@
 
                                 </div>
                             </div>
-
-
                             <!-- Modal footer -->
                             <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600 justify-end">
-                                <button data-modal-hide="addresident-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
+                                <button  data-modal-hide="addresident-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
                                 <button  type="submit"  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save</button>
                             </div>
 
@@ -289,8 +278,54 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
+</div>
+
+<script>
+   
+    var my_handlers = {
+
+        fill_provinces:  function(){
+
+            var region_code = $(this).val();
+            $('#province').ph_locations('fetch_list', [{"region_code": region_code}]);
+            
+        },
+
+        fill_cities: function(){
+
+            var province_code = $(this).val();
+            $('#city').ph_locations( 'fetch_list', [{"province_code": province_code}]);
+        },
+
+
+        fill_barangays: function(){
+
+            var city_code = $(this).val();
+            $('#barangay').ph_locations('fetch_list', [{"city_code": city_code}]);
+        }
+    };
+
+    $(function(){
+        $('#region').on('change', my_handlers.fill_provinces);
+        $('#province').on('change', my_handlers.fill_cities);
+        $('#city').on('change', my_handlers.fill_barangays);
+
+        $('#region').ph_locations({'location_type': 'regions'});
+        $('#province').ph_locations({'location_type': 'provinces'});
+        $('#city').ph_locations({'location_type': 'cities'});
+        $('#barangay').ph_locations({'location_type': 'barangays'});
+
+        $('#region').val("{{ $region }}");
+        $('#province').val("{{ $selectedProvince }}");
+        $('#city').val("{{ $selectedCity }}");
+        $('#barangay').val("{{ $selectedBarangay }}");
+
+        $('#region').ph_locations('fetch_list');
+        
+    });
+
+</script>
+
 </div>

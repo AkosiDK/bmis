@@ -39,8 +39,7 @@
                             <div class="flex justify-center">
                                 <div class="rounded-lg shadow-lg bg-white w-full h-full">
                                     <div class="m-4">
-                                        <label class="inline-block mb-2 text-gray-500">Upload
-                                            Image(jpg,png,svg,jpeg)</label>
+                                        <label class="inline-block mb-2 text-gray-500">Upload Image(jpg,png,svg,jpeg)</label>
                                         <div class="flex items-center justify-center w-full">
                                             <label class="flex flex-col w-full h-full border-4 border-dashed hover:bg-gray-100 hover:border-gray-300">
                                                 <div class="flex flex-col items-center justify-center pt-7">

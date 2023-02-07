@@ -5,6 +5,7 @@ namespace App\Http\Livewire\Residents;
 use Livewire\Component;
 use App\Models\Residents;
 use Illuminate\Http\Request;
+use GuzzleHttp\Client;
 
 
 class Addresident extends Component
@@ -17,7 +18,16 @@ class Addresident extends Component
 
     public $firstname,$middlename,$lastname,$suffix,$alias,$gender,$birthplace,$birthdate,$email,$contact,$citizenship,$civilstatus,
            $alivedordeceased,$voterstatus,$bloodtype,$pwd,$street,$nationalid,$remarks,$occupation,$officeaddress,$employer,$employercontact;
-    
+    public $residentmodal = false;
+
+    public $selectedRegion;
+    public $selectedProvince;
+    public $selectedCity;
+    public $selectedBarangay;
+    public $region;
+    public $provinces;
+    public $cities;
+    public $barangays;
     
     protected $rules = [
 
@@ -38,6 +48,11 @@ class Addresident extends Component
                 'voterstatus' => 'required',
                 'bloodtype' => 'required',
                 'pwd' => 'required',
+                'region' => 'required',
+                'selectedRegion' => 'required',
+                'selectedProvince'=>'required',
+                'selectedCity' => 'required',
+                'selectedBarangay' => 'required',
                 'street' => 'required',
                 'nationalid' => 'required',
                 'remarks' => 'required',
@@ -47,41 +62,39 @@ class Addresident extends Component
                 'employercontact' => 'required',
         ];
 
+    protected $messages = [
+            'email.required' => 'The Email Address cannot be empty.',
+            'email.email' => 'The Email Address format is not valid.',
+    ];
 
+    public function updated($fields)
+    {
+        $this->validateOnly($fields);
+    }
+
+
+    public function showModal()
+    {
+        $this->modal = true;
+    }
+
+   
+
+    public function closeModal()
+    {
+        $this->modal = false;
+    }
 
     public function store(Request $request)
     {
-        $this->validate();
+        $validatedData = $this->validate();
 
     
-        // Residents::create($validatedData);
-        
-            Residents::create([
-                'firstname' => $this->firstname,
-                'middlename' => $this->middlename,
-                'lastname' => $this->lastname,
-                'suffix' => $this->suffix,
-                'alias' => $this->alias,
-                'gender' => $this->gender,
-                'birthdate' => $this->birthdate,
-                'birthplace' => $this->birthplace,
-                'email' => $this->email,
-                'contact' => $this->contact,
-                'citizenship' => $this->citizenship,
-                'civilstatus' => $this->civilstatus,
-                'alivedordeceased' => $this->alivedordeceased,
-                'voterstatus' => $this->voterstatus,
-                'bloodtype' => $this->bloodtype,
-                'pwd' => $this->pwd,
-                'street' => $this->street,
-                'nationalid' => $this->nationalid,
-                'remarks' => $this->remarks,
-                'occupation' => $this->occupation,
-                'officeaddress' => $this->officeaddress,
-                'employer' => $this->employer,
-                'employercontact' => $this->employercontact,]);
+        Residents::create($validatedData);
 
-                $this->dispatchBrowserEvent('resident-added');
-                
+        $this->closeModal();
+        
+              
     }
+
 }

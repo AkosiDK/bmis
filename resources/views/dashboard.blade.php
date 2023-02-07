@@ -18,7 +18,7 @@
                     <div class="grid grid-cols-5 gap-5">
                         <div class="col-span-1">
                             <li role="presentation">
-                                <button class="rounded-lg bg-blue-600 hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring focus:ring-blue-500" id="totalblotter-tab" data-tabs-target="#totalblotter" role="tab" aria-controls="totalblotter" aria-selected="true">
+                                <button class="rounded-lg drop-shadow-xl bg-blue-600 hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring focus:ring-blue-500" id="totalblotter-tab" data-tabs-target="#totalblotter" role="tab" aria-controls="totalblotter" aria-selected="true">
                                     <div class="mx-auto  p-5" style="width: 100; height:150px;">
                                         <div class="grid grid-cols-12">
                                             <div class="col-span-11">
@@ -42,7 +42,7 @@
                         </div>
                         <div class="col-span-1">
                             <li role="presentation">
-                                <button class="rounded-lg bg-green-600 hover:bg-green-700 active:bg-green-800 focus:outline-none focus:ring focus:ring-green-500" id="activeblotter-tab" data-tabs-target="#activeblotter" role="tab" aria-controls="activeblotter" aria-selected="false">
+                                <button class="rounded-lg drop-shadow-xl bg-green-600 hover:bg-green-700 active:bg-green-800 focus:outline-none focus:ring focus:ring-green-500" id="activeblotter-tab" data-tabs-target="#activeblotter" role="tab" aria-controls="activeblotter" aria-selected="false">
                                     <div class="mx-auto  p-5" style="width: 100; height:150px;">
                                         <div class="grid grid-cols-12">
                                             <div class="col-span-11">
@@ -64,7 +64,7 @@
                         </div>
                         <div class="col-span-1">
                             <li role="presentation">
-                                <button class="rounded-lg bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 focus:outline-none focus:ring focus:ring-yellow-400" id="settledblotter-tab" data-tabs-target="#settledblotter" role="tab" aria-controls="settledblotter" aria-selected="false">
+                                <button class="rounded-lg drop-shadow-xl bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 focus:outline-none focus:ring focus:ring-yellow-400" id="settledblotter-tab" data-tabs-target="#settledblotter" role="tab" aria-controls="settledblotter" aria-selected="false">
                                     <div class="mx-auto  p-5" style="width: 100; height:150px;">
                                         <div class="grid grid-cols-12">
                                             <div class="col-span-11">
@@ -87,7 +87,7 @@
                         </div>
                         <div class="col-span-1">
                             <li role="presentation">
-                                <button class="rounded-lg bg-sky-500 hover:bg-sky-600 active:bg-sky-700 focus:outline-none focus:ring focus:ring-sky-400" id="scheduledblotter-tab" data-tabs-target="#scheduledblotter" role="tab" aria-controls="scheduledblotter" aria-selected="false">
+                                <button class="rounded-lg drop-shadow-xl bg-sky-500 hover:bg-sky-600 active:bg-sky-700 focus:outline-none focus:ring focus:ring-sky-400" id="scheduledblotter-tab" data-tabs-target="#scheduledblotter" role="tab" aria-controls="scheduledblotter" aria-selected="false">
                                     <div class="mx-auto  p-5" style="width: 100; height:150px;">
                                         <div class="grid grid-cols-12">
                                             <div class="col-span-11">
@@ -109,7 +109,7 @@
                         </div>
                         <div class="col-span-1">
                             <li role="presentation">
-                                <button class="rounded-lg bg-red-500 hover:bg-red-600 active:bg-red-700 focus:outline-none focus:ring focus:ring-red-400" id="unscheduledblotter-tab" data-tabs-target="#unscheduledblotter" role="tab" aria-controls="unscheduledblotter" aria-selected="false">
+                                <button class="rounded-lg drop-shadow-xl bg-red-500 hover:bg-red-600 active:bg-red-700 focus:outline-none focus:ring focus:ring-red-400" id="unscheduledblotter-tab" data-tabs-target="#unscheduledblotter" role="tab" aria-controls="unscheduledblotter" aria-selected="false">
                                     <div class="mx-auto  p-5" style="width: 100; height:150px;">
                                         <div class="grid grid-cols-12">
                                             <div class="col-span-11">
@@ -136,7 +136,7 @@
             <div id="myTabContent">
                 <div class="grid grid-cols-12 gap-x-5 rounded-lg" id="totalblotter" role="tabpanel" aria-labelledby="totalblotter-tab">
                     <div class="col-span-12">
-                        <div class="bg-white dark:bg-gray-800">
+                        <div class="bg-white dark:bg-gray-800 rounded-lg">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-9 py-6 px-5">
                                     <div class="text-xl font-bold text-start">Barangay Population</div>
@@ -348,7 +348,7 @@
 
                 <div class="grid grid-cols-12 gap-x-5 hidden" id="activeblotter" role="tabpanel" aria-labelledby="activeblotter-tab">
                 <div class="col-span-12">
-                        <div class="bg-white dark:bg-gray-800">
+                        <div class="bg-white dark:bg-gray-800 rounded-lg">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-9 py-6 px-5">
                                     <div class="text-xl font-bold text-start">Barangay Voters</div>
@@ -559,7 +559,7 @@
 
                 <div class="grid grid-cols-12 gap-x-5 hidden" id="settledblotter" role="tabpanel" aria-labelledby="settledblotter-tab">
                 <div class="col-span-12">
-                        <div class="bg-white dark:bg-gray-800">
+                        <div class="bg-white dark:bg-gray-800 rounded-lg">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-9 py-6 px-5">
                                     <div class="text-xl font-bold text-start">Barangay Non-Voters</div>
@@ -770,7 +770,7 @@
 
                 <div class="grid grid-cols-12 gap-x-5 hidden" id="scheduledblotter" role="tabpanel" aria-labelledby="scheduledblotter-tab">
                 <div class="col-span-12">
-                        <div class="bg-white dark:bg-gray-800">
+                        <div class="bg-white dark:bg-gray-800 rounded-lg">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-9 py-6 px-5">
                                     <div class="text-xl font-bold text-start">Barangay Senior Citizen</div>
@@ -981,7 +981,7 @@
 
                 <div class="grid grid-cols-12 gap-x-5 hidden" id="unscheduledblotter" role="tabpanel" aria-labelledby="unscheduledblotter-tab">
                 <div class="col-span-12">
-                        <div class="bg-white dark:bg-gray-800">
+                        <div class="bg-white dark:bg-gray-800 rounded-lg">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-9 py-6 px-5">
                                     <div class="text-xl font-bold text-start">Barangay PWD</div>

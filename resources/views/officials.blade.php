@@ -12,17 +12,19 @@
 
     <div class="mx-auto">
         <div class="bg-white overflow-hidden sm:rounded-lg shadow-lg">
-
             <div class="grid grid-cols-4">
                 <div class="rounded-lg col-span-4 py-2">
-                    <div>
-                        <img src="{{ asset('img/brgylogo.png') }}" alt="" class="mx-auto w-24 h-24">
-                        <p class="text-center text-xl font-bold text-black">Barangay Baluarte, Tagoloan</p>
-                        <p class="text-center text-xl font-bold text-black">Misamis Oriental, 9001</p>
+                    <div class="text-center">
+                        <p class="text-xs font-bold">Republic of the Philippines</p>
+                        <p class="text-xs font-bold">Province of Misamis Oriental</p>
+                        <p class="text-xs font-bold">Municipality of Tagoloan, 9001</p>
+                        <img src="{{ asset('img/brgylogo.png') }}" alt="" class="mx-auto w-24">
+                        <p class="text-xl font-bold">BRGY. BALUARTE</p>
+                        <p class="text-xs font-bold">Contact No.: 09123456789</p>
+                        <p class="text-xs font-bold">Email: brgybaluarte@gmail.com</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 

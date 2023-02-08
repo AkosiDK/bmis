@@ -14,7 +14,7 @@
     <div class="">
         <div class="mx-auto">
             <div class="border-b border-gray-200 dark:border-gray-700 mb-4">
-                <ul class="flex flex-wrap -mb-px" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                <ul class="flex flex-wrap" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                     <div class="grid grid-cols-5 gap-5">
                         <div class="col-span-1">
                             <li role="presentation">

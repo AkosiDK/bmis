@@ -23,10 +23,9 @@
             </a>
             <!-- Profile Info -->
             <div>
-                <h3 class="mb-2 overflow-hidden text-2xl font-bold whitespace-nowrap overflow-ellipsis text-white">{{ auth()->user()->name }}</h3>
                 <div>
                     <h5 class="overflow-hidden text-xs font-normal whitespace-nowrap overflow-ellipsis text-white">
-                        Administrator
+                        ADMINISTRATOR
                     </h5>
                 </div>
             </div>
@@ -83,18 +82,6 @@
             </x-slot>
             <p class="text-white">{{ __('Settings') }}</p>
         </x-sidebar-nav-link>
-
-        <form method="POST" action="{{ route('logout') }}">
-            @csrf
-            <x-sidebar-nav-link onclick="event.preventDefault();this.closest('form').submit();" class="text-white">
-                <x-slot name="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-4" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                    </svg>
-                </x-slot>
-                <p class="text-white">{{ __('Sign Out') }}</p>
-            </x-sidebar-nav-link>
-        </form>
     </div>
 </div>
 <div :class="{ '!inline': open }" class="z-10 fixed top-0 left-0 w-screen h-screen bg-gray-900 bg-opacity-30 hidden md:!hidden transition ease-in-out duration-300"></div>

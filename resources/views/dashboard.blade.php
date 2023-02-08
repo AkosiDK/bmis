@@ -7,7 +7,6 @@
     <x-slot name="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">Home</li>
-            <li class="breadcrumb-item">Dashboard</li>
         </ol>
     </x-slot>
 

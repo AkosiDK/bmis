@@ -4,7 +4,7 @@
 
     
 
-    
+    <p class="text-center text-xl pb-3 font-semibold text-gray-600">Login</p>
 
     <form method="POST" action="{{ route('login') }}">
         @csrf

@@ -15,8 +15,8 @@
 </head>
 
 <body class="bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('./img/BG.jpg');">
-    
-    <header>
+
+    <header class="flex items-center justify-center">
         <nav class="bg-gradient-to-r from-blue-700 px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
                 <a href="#" class="flex items-center">
@@ -60,9 +60,24 @@
             </div>
         </nav>
     </header>
-    <section>
-        sdasd
+
+    <section class="h-screen flex items-center justify-center">
+
+      <div class="flex justify-center">
+        <div class="pb-8">
+            <img src="{{ asset('img/brgylogo.png') }}" alt="" class="mx-auto w-48 border-2 rounded-full">
+          <p class="text-5xl text-white font-bold text-center pb-4">Welcome to Barangay</p>
+          <p class="text-9xl text-white font-bold text-center bg-clip-text bg-gradient-to-r from-yellow-400 to-blue-700 text-transparent pb-8">Baluarte Proper</p>
+          <p class="text-5xl text-white font-bold text-center pb-2">Tagoloan, Misamis Oriental, 9001</p>
+          <p class="text-3xl text-white font-bold text-center pb-2">Open Hours of Barangay: Monday to Friday (8AM - 5PM)</p>
+          <p class="text-2xl text-blue-500 font-bold text-center">Contact No.: 09197568493 | Email: brgybaluarte@gmail.com</p>
+        </div>
+      </div>
+
     </section>
+
+
+
 </body>
 
 </html>

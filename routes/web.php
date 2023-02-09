@@ -23,6 +23,9 @@ use App\Http\Livewire\Residents\Addresident;
 Route::get('/userlandingpage', function () {
     return view('userlandingpage');
 });
+Route::get('/userannouncement', function () {
+    return view('userannouncement');
+});
 
 
 

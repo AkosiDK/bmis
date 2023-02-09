@@ -24,7 +24,7 @@
             <!-- Profile Info -->
             <div>
                 <div>
-                    <h5 class="overflow-hidden text-xs font-normal whitespace-nowrap overflow-ellipsis text-white font-bold">
+                    <h5 class="overflow-hidden text-xs whitespace-nowrap overflow-ellipsis text-white font-bold">
                         ADMINISTRATOR
                     </h5>
                 </div>

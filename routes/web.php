@@ -15,10 +15,22 @@ use App\Http\Livewire\Residents\Addresident;
 |
 */
 
+/*
+|--------------------------------------------------------------------------
+| Web Routes for userpages
+|--------------------------------------------------------------------------
+*/
+Route::get('/userlandingpage', function () {
+    return view('userlandingpage');
+});
+
+
+
+
+
 Route::get('/', function () {
     return view('welcome');
 });
-
 
 Route::get('/dashboard', function () {
     return view('dashboard');

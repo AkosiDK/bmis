@@ -52,9 +52,6 @@
                         <li>
                             <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
                         </li>
-                        <li>
-                            <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -62,21 +59,27 @@
     </header>
 
     <section class="h-screen flex items-center justify-center">
-
-      <div class="flex justify-center">
-        <div class="pb-8">
-            <img src="{{ asset('img/brgylogo.png') }}" alt="" class="mx-auto w-48 border-2 rounded-full">
-          <p class="text-5xl text-white font-bold text-center pb-4">Welcome to Barangay</p>
-          <p class="text-9xl text-white font-bold text-center bg-clip-text bg-gradient-to-r from-yellow-400 to-blue-700 text-transparent pb-8">Baluarte Proper</p>
-          <p class="text-5xl text-white font-bold text-center pb-2">Tagoloan, Misamis Oriental, 9001</p>
-          <p class="text-3xl text-white font-bold text-center pb-2">Open Hours of Barangay: Monday to Friday (8AM - 5PM)</p>
-          <p class="text-2xl text-blue-500 font-bold text-center">Contact No.: 09197568493 | Email: brgybaluarte@gmail.com</p>
+        <div class="flex justify-center">
+            <div class="pb-8">
+                <img src="{{ asset('img/brgylogo.png') }}" alt="" class="mx-auto w-48 border-2 rounded-full">
+                <p class="text-5xl text-white font-bold text-center pb-4">Welcome to Barangay</p>
+                <p class="text-9xl text-white font-bold text-center bg-clip-text bg-gradient-to-r from-yellow-400 to-blue-700 text-transparent pb-8">Baluarte Proper</p>
+                <p class="text-5xl text-white font-bold text-center pb-2">Tagoloan, Misamis Oriental, 9001</p>
+                <p class="text-3xl text-white font-bold text-center pb-2">Open Hours of Barangay: Monday to Friday (8AM - 5PM)</p>
+                <p class="text-2xl text-blue-500 font-bold text-center pb-8">Contact No.: 09197568493 | Email: brgybaluarte@gmail.com</p>
+                <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                    <button type="button" class="inline-flex justify-center items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Request Certificates
+                        <x-fas-arrow-right class="w-6 pl-2"/>
+                    </button>
+                    <button type="button" class="inline-flex justify-center items-center text-black bg-gray-100 hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <x-fas-newspaper class="w-6 pr-2"/>
+                        Announcement
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-
     </section>
-
-
 
 </body>
 

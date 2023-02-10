@@ -70,33 +70,21 @@
       </div>
       <div class="carousel-inner relative w-full overflow-hidden">
         <div class="carousel-item active relative float-left w-full">
-          <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
-            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(123).jpg" class="block w-full" />
-            <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50"></div>
-          </div>
+          <img src="{{ asset('img/announcement1.jpg') }}" class="block w-full" alt="..." />
           <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl">First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5 class="text-xl font-bold">ARAW NG KABATAAN 2023 BASKETBALL LEAGUE</h5>
           </div>
         </div>
         <div class="carousel-item relative float-left w-full">
-          <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
-            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(124).jpg" class="block w-full" />
-            <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50"></div>
-          </div>
+          <img src="{{ asset('img/announcement2.jpg') }}" class="block w-full" alt="..." />
           <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl">Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5 class="text-xl font-bold">ARAW NG KABATAAN 2023 VOLLEYBALL LEAGUE</h5>
           </div>
         </div>
         <div class="carousel-item relative float-left w-full">
-          <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
-            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(125).jpg" class="block w-full" />
-            <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50"></div>
-          </div>
+          <img src="{{ asset('img/announcement3.jpg') }}" class="block w-full" alt="..." />
           <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl">Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5 class="text-xl font-bold">ARAW NG KABATAAN 2023 TABLE TENNIS LEAGUE</h5>
           </div>
         </div>
       </div>
@@ -119,7 +107,7 @@
 
   <section class="mb-32 text-gray-800 text-center pt-12">
     <div class="grid lg:grid-cols-3 px-5 gap-3 xl:gap-x-6">
-      <div class="mb-6 lg:mb-0">
+      <div class="mb-12 lg:mb-0">
         <div>
           <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
             <img src="{{ asset('img/announcement1.jpg') }}" class="w-full" alt="Louvre" />
@@ -134,15 +122,15 @@
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
           <p class="text-white text-justify indent-8 px-5">
-          Ang iskedyul ng basketball ng Barangay para sa Enero 25, 2023 ay puno ng kapana-panabik na mga 
-          laro at aktibidad na tiyak na magpapasaya sa mga tagahanga ng basketball. Ang pambungad na 
-          laro ng araw ay magsisimula sa isang mahusay na laro ng street ball. Pagkatapos nito, sasabak 
-          sa full-court battle ang Barangays Bombers sa Barangsay Bulls.
+            Ang iskedyul ng basketball ng Barangay para sa Enero 25, 2023 ay puno ng kapana-panabik na mga
+            laro at aktibidad na tiyak na magpapasaya sa mga tagahanga ng basketball. Ang pambungad na
+            laro ng araw ay magsisimula sa isang mahusay na laro ng street ball. Pagkatapos nito, sasabak
+            sa full-court battle ang Barangays Bombers sa Barangsay Bulls.
           </p>
         </div>
       </div>
 
-      <div class="mb-6 lg:mb-0">
+      <div class="mb-12 lg:mb-6">
         <div>
           <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
             <img src="{{ asset('img/announcement2.jpg') }}" class="w-full" alt="Louvre" />
@@ -157,22 +145,22 @@
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
           <p class="text-white text-justify indent-8 px-5">
-          Nakatakdang simulan ng Barangay Volleyball League ang iskedyul nito sa Enero 25, 2023. 
-          Magkakaroon ng apat na dibisyon: U-14, U-17, U-21 at U-25. Ang lahat ng mga koponan ay 
-          inaasahang darating nang hindi bababa sa isang oras bago magsimula ang kanilang laban at 
-          kakailanganing sundin ang mga protocol sa kaligtasan tulad ng pagsusuot ng maskara, 
-          madalas na paghuhugas ng kamay, at pagdistansya mula sa ibang tao. Ang araw ay magtatapos 
-          sa U-25 division sa 12:30pm at ang closing ceremonies at awards sa 1:00pm. Ang lahat ng mga 
-          kalahok ay hinihikayat na tamasahin ang isang masaya at mapagkumpitensyang araw ng volleyball.
+            Nakatakdang simulan ng Barangay Volleyball League ang iskedyul nito sa Enero 25, 2023.
+            Magkakaroon ng apat na dibisyon: U-14, U-17, U-21 at U-25. Ang lahat ng mga koponan ay
+            inaasahang darating nang hindi bababa sa isang oras bago magsimula ang kanilang laban at
+            kakailanganing sundin ang mga protocol sa kaligtasan tulad ng pagsusuot ng maskara,
+            madalas na paghuhugas ng kamay, at pagdistansya mula sa ibang tao. Ang araw ay magtatapos
+            sa U-25 division sa 12:30pm at ang closing ceremonies at awards sa 1:00pm. Ang lahat ng mga
+            kalahok ay hinihikayat na tamasahin ang isang masaya at mapagkumpitensyang araw ng volleyball.
           </p>
 
         </div>
       </div>
 
-      <div class="mb-0">
+      <div class="mb-12 lg:mb-6">
         <div>
           <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
-            <img src="{{ asset('img/announcement3.jpg') }}" class="w-full" alt="Louvre" />
+            <img src="{{ asset('img/announcement3.jpg') }}" class="w-full" alt="" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
@@ -184,18 +172,244 @@
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
           <p class="text-white text-justify indent-8 px-5">
-          Ang Brgy. Baluarte ay nagho-host ng isang table tennis tournament sa Enero 25, 2023. 
-          Ang lahat ng mga rehistradong manlalaro na may edad 16 pataas ay iniimbitahan na magdala 
-          ng kanilang sariling kagamitan at kasuotan sa Barangay Hall sa pagitan ng 8:00-10:00 AM. 
-          Ang pagpaparehistro ay bukas mula 7:00-7:30 AM at ang torneo ay susunod sa isang format 
-          ng eliminasyon. Ang mga premyo at isang tropeo ay igagawad sa mananalo at runner-up, 
-          at ang mga pampalamig ay ihahain sa lahat ng kalahok.
-        </p>
+            Ang Brgy. Baluarte ay nagho-host ng isang table tennis tournament sa Enero 25, 2023.
+            Ang lahat ng mga rehistradong manlalaro na may edad 16 pataas ay iniimbitahan na magdala
+            ng kanilang sariling kagamitan at kasuotan sa Barangay Hall sa pagitan ng 8:00-10:00 AM.
+            Ang pagpaparehistro ay bukas mula 7:00-7:30 AM at ang torneo ay susunod sa isang format
+            ng eliminasyon. Ang mga premyo at isang tropeo ay igagawad sa mananalo at runner-up,
+            at ang mga pampalamig ay ihahain sa lahat ng kalahok.
+          </p>
 
+        </div>
+      </div>
+
+      <div class="mb-12 lg:mb-6">
+        <div>
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src="{{ asset('img/announcement1.jpg') }}" class="w-full" alt="" />
+            <a href="#!">
+              <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </a>
+          </div>
+
+          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 BASKETBALL LEAGUE </h5>
+          <p class="text-white mb-5">
+            <small>Published <u>01/24/2023</u> by
+              <a href="" class="text-yellow-400">Admin</a></small>
+          </p>
+          <p class="text-white text-justify indent-8 px-5">
+            Ang iskedyul ng basketball ng Barangay para sa Enero 25, 2023 ay puno ng kapana-panabik na mga
+            laro at aktibidad na tiyak na magpapasaya sa mga tagahanga ng basketball. Ang pambungad na
+            laro ng araw ay magsisimula sa isang mahusay na laro ng street ball. Pagkatapos nito, sasabak
+            sa full-court battle ang Barangays Bombers sa Barangsay Bulls.
+          </p>
+        </div>
+      </div>
+
+      <div class="mb-12 lg:mb-6">
+        <div>
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src="{{ asset('img/announcement2.jpg') }}" class="w-full" alt="" />
+            <a href="#!">
+              <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </a>
+          </div>
+
+          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 VOLLEYBALL LEAGUE </h5>
+          <p class="text-white mb-5">
+            <small>Published <u>01/24/2023</u> by
+              <a href="" class="text-yellow-400">Admin</a></small>
+          </p>
+          <p class="text-white text-justify indent-8 px-5">
+            Nakatakdang simulan ng Barangay Volleyball League ang iskedyul nito sa Enero 25, 2023.
+            Magkakaroon ng apat na dibisyon: U-14, U-17, U-21 at U-25. Ang lahat ng mga koponan ay
+            inaasahang darating nang hindi bababa sa isang oras bago magsimula ang kanilang laban at
+            kakailanganing sundin ang mga protocol sa kaligtasan tulad ng pagsusuot ng maskara,
+            madalas na paghuhugas ng kamay, at pagdistansya mula sa ibang tao. Ang araw ay magtatapos
+            sa U-25 division sa 12:30pm at ang closing ceremonies at awards sa 1:00pm. Ang lahat ng mga
+            kalahok ay hinihikayat na tamasahin ang isang masaya at mapagkumpitensyang araw ng volleyball.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="mb-12 lg:mb-6">
+        <div>
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src="{{ asset('img/announcement3.jpg') }}" class="w-full" alt="" />
+            <a href="#!">
+              <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </a>
+          </div>
+
+          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 TABLE TENNIS LEAGUE </h5>
+          <p class="text-white mb-5">
+            <small>Published <u>01/24/2023</u> by
+              <a href="" class="text-yellow-400">Admin</a></small>
+          </p>
+          <p class="text-white text-justify indent-8 px-5">
+            Ang Brgy. Baluarte ay nagho-host ng isang table tennis tournament sa Enero 25, 2023.
+            Ang lahat ng mga rehistradong manlalaro na may edad 16 pataas ay iniimbitahan na magdala
+            ng kanilang sariling kagamitan at kasuotan sa Barangay Hall sa pagitan ng 8:00-10:00 AM.
+            Ang pagpaparehistro ay bukas mula 7:00-7:30 AM at ang torneo ay susunod sa isang format
+            ng eliminasyon. Ang mga premyo at isang tropeo ay igagawad sa mananalo at runner-up,
+            at ang mga pampalamig ay ihahain sa lahat ng kalahok.
+          </p>
         </div>
       </div>
     </div>
   </section>
+
+
+  <!-- ====== Footer Section Start -->
+  <footer class="relative z-10 bg-gradient-to-r from-red-500  to-blue-700 pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+    <div class="container mx-auto">
+      <div class="-mx-4 flex flex-wrap">
+        <div class="w-full px-4 sm:w-3/3 lg:w-3/12">
+          <div class="mb-10 w-full">
+            <a href="#" class="flex items-center mb-8">
+              <img src="{{'./img/logo.png'}}" class="h-6 mr-3 sm:h-9" alt="Logo">
+              <span class="self-center text-xl font-bold whitespace-nowrap dark:text-white text-white">BMIS</span>
+            </a>
+            <p class="text-white mb-9 text-base">
+              Baluarte, Tagoloan, Misamis Oriental, 9001
+              Monday to Friday (8AM - 5PM)
+            </p>
+            <p class="text-dark flex items-center text-sm font-medium mb-2">
+              <span class="text-primary mr-3">
+                <x-clarity-phone-handset-solid class="w-5 fill-white" />
+              </span>
+              <span class="text-white">09197568493</span>
+            </p>
+            <p class="text-dark flex items-center text-sm font-medium">
+              <span class="text-primary mr-3">
+                <x-clarity-email-solid class="w-5 fill-white" />
+              </span>
+              <span class="text-white">brgybaluarte@gmail.com</span>
+            </p>
+          </div>
+        </div>
+        <div class="w-full px-4 sm:w-1/2 lg:w-4/12">
+          <div class="mb-10 w-full">
+            <h4 class="text-white mb-9 text-lg font-semibold">Navigation</h4>
+            <ul>
+              <div class="grid grid-cols-6">
+                <div class="col-span-3">
+                  <li>
+                    <a href="#" class="text-yellow-400 hover:text-white mb-2 inline-block text-base leading-loose">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-yellow-400 hover:text-white mb-2 inline-block text-base leading-loose">
+                      Announcement
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-yellow-400 hover:text-white mb-2 inline-block text-base leading-loose">
+                      News
+                    </a>
+                  </li>
+                </div>
+                <div class="col-span-3">
+                  <li>
+                    <a href="#" class="text-yellow-400 hover:text-white mb-2 inline-block text-base leading-loose">
+                      Document
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-yellow-400 hover:text-white mb-2 inline-block text-base leading-loose">
+                      Official
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-yellow-400 hover:text-white mb-2 inline-block text-base leading-loose">
+                      About
+                    </a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
+          <div class="mb-10 w-full">
+            <h4 class="text-white mb-9 text-lg font-semibold">Quick Links</h4>
+            <ul>
+              <li>
+                <a href="#" class="text-yellow-400 hover:text-white mb-2 inline-block text-base leading-loose">
+                  Brgy. Clearance
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-yellow-400 hover:text-white mb-2 inline-block text-base leading-loose">
+                  Brgy. Indigency
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-yellow-400 hover:text-white mb-2 inline-block text-base leading-loose">
+                  Brgy. Residency
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-yellow-400 hover:text-white mb-2 inline-block text-base leading-loose">
+                  Brgy. Resident ID
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+          <div class="mb-10 w-full">
+            <h4 class="text-white mb-9 text-lg font-semibold">Follow Us On</h4>
+            <div class="mb-6 flex items-center">
+              <a href="#" class="text-white bg-white  hover:border-yellow-400 mr-3 flex h-8 w-8 items-center justify-center rounded border-2 hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                <x-fab-square-facebook class="w-6 fill-blue-700" />
+              </a>
+              <a href="#" class="text-white bg-white  hover:border-yellow-400 mr-3 flex h-8 w-8 items-center justify-center rounded border-2 hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                <x-fab-square-twitter class="w-6 fill-blue-700" />
+              </a>
+              <a href="#" class="text-white bg-white  hover:border-yellow-400 mr-3 flex h-8 w-8 items-center justify-center rounded border-2 hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                <x-fab-square-instagram class="w-6 fill-blue-700" />
+              </a>
+              <a href="#" class="text-white bg-white  hover:border-yellow-400 mr-3 flex h-8 w-8 items-center justify-center rounded border-2 hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                <x-fab-square-youtube class="w-6 fill-blue-700" />
+              </a>
+            </div>
+            <p class="text-white text-base">&copy; {{ date('Y') }} | BMIS</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div>
+      <span class="absolute left-0 bottom-0 z-[-1]">
+        <svg width="217" height="229" viewBox="0 0 217 229" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z" fill="url(#paint0_linear_1179_5)" />
+          <defs>
+            <linearGradient id="paint0_linear_1179_5" x1="76.5" y1="281" x2="76.5" y2="1.22829e-05" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3056D3" stop-opacity="0.08" />
+              <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="absolute top-10 right-10 z-[-1]">
+        <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z" fill="url(#paint0_linear_1179_4)" />
+          <defs>
+            <linearGradient id="paint0_linear_1179_4" x1="-1.63917e-06" y1="37.5" x2="75" y2="37.5" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#13C296" stop-opacity="0.31" />
+              <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+    </div>
+  </footer>
+  <!-- ====== Footer Section End -->
+
 
 
 </body>

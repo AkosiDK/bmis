@@ -91,7 +91,12 @@
 
 
 
-
+<!-- ====== refresh start top script-->
+<script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+</script>
 </body>
 
 </html>

@@ -26,6 +26,9 @@ Route::get('/userlandingpage', function () {
 Route::get('/userannouncement', function () {
     return view('userannouncement');
 });
+Route::get('/usernews', function () {
+    return view('usernews');
+});
 
 
 

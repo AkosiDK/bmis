@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-  <title>Announcement Page</title>
+  <title>News Page</title>
 </head>
 
 <body class="bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('./img/BG.jpg');">
@@ -70,21 +70,21 @@
       </div>
       <div class="carousel-inner relative w-full overflow-hidden">
         <div class="carousel-item active relative float-left w-full">
-          <img src="{{ asset('img/announcement1.jpg') }}" class="block w-full" alt="..." />
+          <img src="{{ asset('img/news1.jpg') }}" class="block w-full" alt="..." />
           <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl font-bold bg-red-700 bg-opacity-50 rounded-xl py-5">ARAW NG KABATAAN 2023 BASKETBALL LEAGUE</h5>
+            <h5 class="text-xl font-bold bg-red-700 bg-opacity-75 rounded-xl py-5">BARANGAY BALUARTE SHOOTING INCIDENT</h5>
           </div>
         </div>
         <div class="carousel-item relative float-left w-full">
-          <img src="{{ asset('img/announcement2.jpg') }}" class="block w-full" alt="..." />
+          <img src="{{ asset('img/news2.jpg') }}" class="block w-full" alt="..." />
           <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl font-bold bg-red-700 bg-opacity-50 rounded-xl py-5">ARAW NG KABATAAN 2023 VOLLEYBALL LEAGUE</h5>
+            <h5 class="text-xl font-bold bg-red-700 bg-opacity-75 rounded-xl py-5">DRUG BUY-BUST OPERATION LEADS TO ARRESTS</h5>
           </div>
         </div>
         <div class="carousel-item relative float-left w-full">
-          <img src="{{ asset('img/announcement3.jpg') }}" class="block w-full" alt="..." />
+          <img src="{{ asset('img/news3.jpg') }}" class="block w-full" alt="..." />
           <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl font-bold bg-red-700 bg-opacity-50 rounded-xl py-5">ARAW NG KABATAAN 2023 TABLE TENNIS LEAGUE</h5>
+            <h5 class="text-xl font-bold bg-red-700 bg-opacity-75 rounded-xl py-5">REBUILDING HOPE AFTER DEVASTATING FIRE</h5>
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@
 
   <section class="pt-12">
     <div>
-      <p class="text-4xl text-yellow-400 text-center font-bold">Latest Announcement</p>
+      <p class="text-4xl text-yellow-400 text-center font-bold">Latest News</p>
     </div>
   </section>
 
@@ -110,22 +110,25 @@
       <div class="mb-12 lg:mb-0">
         <div>
           <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
-            <img src="{{ asset('img/announcement1.jpg') }}" class="w-full" alt="" />
+            <img src="{{ asset('img/news1.jpg') }}" class="w-full" alt="" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
           </div>
 
-          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 BASKETBALL LEAGUE </h5>
+          <h5 class="text-lg font-bold mb-3 text-white">BARANGAY BALUARTE SHOOTING INCIDENT </h5>
           <p class="text-white mb-5">
-            <small>Published <u>01/24/2023</u> by
+            <small>Published <u>01/29/2023</u> by
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
           <p class="text-white text-justify indent-8 px-5">
-            Ang iskedyul ng basketball ng Barangay para sa Enero 25, 2023 ay puno ng kapana-panabik na mga
-            laro at aktibidad na tiyak na magpapasaya sa mga tagahanga ng basketball. Ang pambungad na
-            laro ng araw ay magsisimula sa isang mahusay na laro ng street ball. Pagkatapos nito, sasabak
-            sa full-court battle ang Barangays Bombers sa Barangsay Bulls.
+          Noong Enero 28, 2023, pitong suspek ang nahuli ng pulisya matapos umanong pagbabarilin ng 
+          maraming tao sa Barangay Baluarte. Ang mga suspek ay iniulat na armado at delikado, 
+          at isang manhunt ay inilunsad upang mahuli ang mga ito. Ang mabilis na pagkilos ng mga 
+          pulis ay humantong sa kanilang matagumpay na pagkakahuli at pagkakakumpiska ng kanilang 
+          mga armas. Agad namang dinala sa malapit na ospital ang mga biktima ng pamamaril para magamot. 
+          Ang insidente ay nagdulot ng galit sa komunidad at nangako ang pulisya na dadalhin ang mga 
+          salarin sa hustisya. Patuloy ang imbestigasyon.
           </p>
         </div>
       </div>
@@ -133,51 +136,26 @@
       <div class="mb-12 lg:mb-6">
         <div>
           <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
-            <img src="{{ asset('img/announcement2.jpg') }}" class="w-full" alt="" />
+            <img src="{{ asset('img/news2.jpg') }}" class="w-full" alt="" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
           </div>
 
-          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 VOLLEYBALL LEAGUE </h5>
+          <h5 class="text-lg font-bold mb-3 text-white">DRUG BUY-BUST OPERATION LEADS TO ARRESTS</h5>
           <p class="text-white mb-5">
-            <small>Published <u>01/24/2023</u> by
+            <small>Published <u>01/29/2023</u> by
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
           <p class="text-white text-justify indent-8 px-5">
-            Nakatakdang simulan ng Barangay Volleyball League ang iskedyul nito sa Enero 25, 2023.
-            Magkakaroon ng apat na dibisyon: U-14, U-17, U-21 at U-25. Ang lahat ng mga koponan ay
-            inaasahang darating nang hindi bababa sa isang oras bago magsimula ang kanilang laban at
-            kakailanganing sundin ang mga protocol sa kaligtasan tulad ng pagsusuot ng maskara,
-            madalas na paghuhugas ng kamay, at pagdistansya mula sa ibang tao. Ang araw ay magtatapos
-            sa U-25 division sa 12:30pm at ang closing ceremonies at awards sa 1:00pm. Ang lahat ng mga
-            kalahok ay hinihikayat na tamasahin ang isang masaya at mapagkumpitensyang araw ng volleyball.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="mb-12 lg:mb-6">
-        <div>
-          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
-            <img src="{{ asset('img/announcement3.jpg') }}" class="w-full" alt="" />
-            <a href="#!">
-              <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-            </a>
-          </div>
-
-          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 TABLE TENNIS LEAGUE </h5>
-          <p class="text-white mb-5">
-            <small>Published <u>01/24/2023</u> by
-              <a href="" class="text-yellow-400">Admin</a></small>
-          </p>
-          <p class="text-white text-justify indent-8 px-5">
-            Ang Brgy. Baluarte ay nagho-host ng isang table tennis tournament sa Enero 25, 2023.
-            Ang lahat ng mga rehistradong manlalaro na may edad 16 pataas ay iniimbitahan na magdala
-            ng kanilang sariling kagamitan at kasuotan sa Barangay Hall sa pagitan ng 8:00-10:00 AM.
-            Ang pagpaparehistro ay bukas mula 7:00-7:30 AM at ang torneo ay susunod sa isang format
-            ng eliminasyon. Ang mga premyo at isang tropeo ay igagawad sa mananalo at runner-up,
-            at ang mga pampalamig ay ihahain sa lahat ng kalahok.
+          Apat na suspek ang arestado sa isang drug buy-bust operation sa Barangay Baluarte noong 
+          Enero 28, 2023. Ang operasyon ay isinagawa ng mga lokal na pulis at nagresulta sa 
+          pagkakakumpiska ng mga iligal na droga, baril, at mga drug paraphernalia. 
+          Nahaharap ngayon ang mga suspek sa mga kasong may kinalaman sa drug trafficking at 
+          possession of illegal firearms. Binigyang-diin ng pulisya ang kahalagahan ng patuloy 
+          na pagsisikap na labanan ang paggamit ng droga at trafficking sa komunidad at hinimok 
+          ang mga residente na iulat ang anumang kahina-hinalang aktibidad upang makatulong na 
+          mapanatiling ligtas ang kanilang kapitbahayan.
           </p>
 
         </div>
@@ -186,22 +164,53 @@
       <div class="mb-12 lg:mb-6">
         <div>
           <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
-            <img src="{{ asset('img/announcement1.jpg') }}" class="w-full" alt="" />
+            <img src="{{ asset('img/news3.jpg') }}" class="w-full" alt="" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
           </div>
 
-          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 BASKETBALL LEAGUE </h5>
+          <h5 class="text-lg font-bold mb-3 text-white">REBUILDING HOPE AFTER DEVASTATING FIRE</h5>
           <p class="text-white mb-5">
-            <small>Published <u>01/24/2023</u> by
+            <small>Published <u>01/29/2023</u> by
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
           <p class="text-white text-justify indent-8 px-5">
-            Ang iskedyul ng basketball ng Barangay para sa Enero 25, 2023 ay puno ng kapana-panabik na mga
-            laro at aktibidad na tiyak na magpapasaya sa mga tagahanga ng basketball. Ang pambungad na
-            laro ng araw ay magsisimula sa isang mahusay na laro ng street ball. Pagkatapos nito, sasabak
-            sa full-court battle ang Barangays Bombers sa Barangsay Bulls.
+          Noong Enero 28, 2023, sumiklab ang isang mapanirang sunog sa Barangay Baluarte, 
+          na nag-iwan ng 50 pamilya na nawalan ng tirahan at nagdadalamhati. Ang mabilis na 
+          pagkalat ng apoy ay tumupok sa kanilang mga bahay, walang iniwan kundi abo at alaala. 
+          Ang mga pamilya ay nahihirapan ngayon na kunin ang mga piraso at makahanap ng masisilungan, 
+          habang sinusubukan nilang tanggapin ang pagkawala ng kanilang mga tahanan. Ang komunidad ay 
+          nagsasama-sama upang mag-alok ng suporta at tulong, ngunit ang daan sa hinaharap ay mahaba 
+          at mahirap. Sa kabila ng mga paghihirap, determinado ang mga pamilya na muling buuin at sumulong, 
+          na may pag-asa at katatagan sa kanilang mga puso.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="mb-12 lg:mb-0">
+        <div>
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src="{{ asset('img/news1.jpg') }}" class="w-full" alt="" />
+            <a href="#!">
+              <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </a>
+          </div>
+
+          <h5 class="text-lg font-bold mb-3 text-white">BARANGAY BALUARTE SHOOTING INCIDENT </h5>
+          <p class="text-white mb-5">
+            <small>Published <u>01/29/2023</u> by
+              <a href="" class="text-yellow-400">Admin</a></small>
+          </p>
+          <p class="text-white text-justify indent-8 px-5">
+          Noong Enero 28, 2023, pitong suspek ang nahuli ng pulisya matapos umanong pagbabarilin ng 
+          maraming tao sa Barangay Baluarte. Ang mga suspek ay iniulat na armado at delikado, 
+          at isang manhunt ay inilunsad upang mahuli ang mga ito. Ang mabilis na pagkilos ng mga 
+          pulis ay humantong sa kanilang matagumpay na pagkakahuli at pagkakakumpiska ng kanilang 
+          mga armas. Agad namang dinala sa malapit na ospital ang mga biktima ng pamamaril para magamot. 
+          Ang insidente ay nagdulot ng galit sa komunidad at nangako ang pulisya na dadalhin ang mga 
+          salarin sa hustisya. Patuloy ang imbestigasyon.
           </p>
         </div>
       </div>
@@ -209,25 +218,26 @@
       <div class="mb-12 lg:mb-6">
         <div>
           <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
-            <img src="{{ asset('img/announcement2.jpg') }}" class="w-full" alt="" />
+            <img src="{{ asset('img/news2.jpg') }}" class="w-full" alt="" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
           </div>
 
-          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 VOLLEYBALL LEAGUE </h5>
+          <h5 class="text-lg font-bold mb-3 text-white">DRUG BUY-BUST OPERATION LEADS TO ARRESTS</h5>
           <p class="text-white mb-5">
-            <small>Published <u>01/24/2023</u> by
+            <small>Published <u>01/29/2023</u> by
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
           <p class="text-white text-justify indent-8 px-5">
-            Nakatakdang simulan ng Barangay Volleyball League ang iskedyul nito sa Enero 25, 2023.
-            Magkakaroon ng apat na dibisyon: U-14, U-17, U-21 at U-25. Ang lahat ng mga koponan ay
-            inaasahang darating nang hindi bababa sa isang oras bago magsimula ang kanilang laban at
-            kakailanganing sundin ang mga protocol sa kaligtasan tulad ng pagsusuot ng maskara,
-            madalas na paghuhugas ng kamay, at pagdistansya mula sa ibang tao. Ang araw ay magtatapos
-            sa U-25 division sa 12:30pm at ang closing ceremonies at awards sa 1:00pm. Ang lahat ng mga
-            kalahok ay hinihikayat na tamasahin ang isang masaya at mapagkumpitensyang araw ng volleyball.
+          Apat na suspek ang arestado sa isang drug buy-bust operation sa Barangay Baluarte noong 
+          Enero 28, 2023. Ang operasyon ay isinagawa ng mga lokal na pulis at nagresulta sa 
+          pagkakakumpiska ng mga iligal na droga, baril, at mga drug paraphernalia. 
+          Nahaharap ngayon ang mga suspek sa mga kasong may kinalaman sa drug trafficking at 
+          possession of illegal firearms. Binigyang-diin ng pulisya ang kahalagahan ng patuloy 
+          na pagsisikap na labanan ang paggamit ng droga at trafficking sa komunidad at hinimok 
+          ang mga residente na iulat ang anumang kahina-hinalang aktibidad upang makatulong na 
+          mapanatiling ligtas ang kanilang kapitbahayan.
           </p>
 
         </div>
@@ -236,25 +246,28 @@
       <div class="mb-12 lg:mb-6">
         <div>
           <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
-            <img src="{{ asset('img/announcement3.jpg') }}" class="w-full" alt="" />
+            <img src="{{ asset('img/news3.jpg') }}" class="w-full" alt="" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
           </div>
 
-          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 TABLE TENNIS LEAGUE </h5>
+          <h5 class="text-lg font-bold mb-3 text-white">REBUILDING HOPE AFTER DEVASTATING FIRE</h5>
           <p class="text-white mb-5">
-            <small>Published <u>01/24/2023</u> by
+            <small>Published <u>01/29/2023</u> by
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
           <p class="text-white text-justify indent-8 px-5">
-            Ang Brgy. Baluarte ay nagho-host ng isang table tennis tournament sa Enero 25, 2023.
-            Ang lahat ng mga rehistradong manlalaro na may edad 16 pataas ay iniimbitahan na magdala
-            ng kanilang sariling kagamitan at kasuotan sa Barangay Hall sa pagitan ng 8:00-10:00 AM.
-            Ang pagpaparehistro ay bukas mula 7:00-7:30 AM at ang torneo ay susunod sa isang format
-            ng eliminasyon. Ang mga premyo at isang tropeo ay igagawad sa mananalo at runner-up,
-            at ang mga pampalamig ay ihahain sa lahat ng kalahok.
+          Noong Enero 28, 2023, sumiklab ang isang mapanirang sunog sa Barangay Baluarte, 
+          na nag-iwan ng 50 pamilya na nawalan ng tirahan at nagdadalamhati. Ang mabilis na 
+          pagkalat ng apoy ay tumupok sa kanilang mga bahay, walang iniwan kundi abo at alaala. 
+          Ang mga pamilya ay nahihirapan ngayon na kunin ang mga piraso at makahanap ng masisilungan, 
+          habang sinusubukan nilang tanggapin ang pagkawala ng kanilang mga tahanan. Ang komunidad ay 
+          nagsasama-sama upang mag-alok ng suporta at tulong, ngunit ang daan sa hinaharap ay mahaba 
+          at mahirap. Sa kabila ng mga paghihirap, determinado ang mga pamilya na muling buuin at sumulong, 
+          na may pag-asa at katatagan sa kanilang mga puso.
           </p>
+
         </div>
       </div>
     </div>
@@ -416,7 +429,6 @@
     window.scrollTo(0, 0);
 }
 </script>
-
 
 </body>
 

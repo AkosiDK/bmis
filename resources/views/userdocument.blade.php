@@ -61,7 +61,7 @@
     </nav>
   </header>
 
-  <section class="flex h-screen w-screen justify-center items-center">
+  <section class="flex h-screen justify-center items-center">
     <div class="grid grid-cols-8 gap-x-5">
       <div class="col-span-2">
         <div class="max-w-sm border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

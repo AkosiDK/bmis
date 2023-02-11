@@ -32,6 +32,9 @@ Route::get('/usernews', function () {
 Route::get('/userdocument', function () {
     return view('userdocument');
 });
+Route::get('/userofficials', function () {
+    return view('userofficials');
+});
 
 
 

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Landing Page</title>
 </head>
 
@@ -64,18 +65,18 @@
   <section class="h-screen flex items-center justify-center">
     <div class="flex justify-center">
       <div class="">
-        <img src="{{ asset('img/brgylogo.png') }}" alt="" class="mx-auto w-48 border-2 rounded-full">
-        <p class="text-5xl text-white font-bold text-center pb-4">Welcome to Barangay</p>
-        <p class="text-9xl text-white font-bold text-center bg-clip-text bg-gradient-to-r from-yellow-400 to-blue-700 text-transparent pb-8">Baluarte Proper</p>
-        <p class="text-5xl text-white font-bold text-center pb-2">Tagoloan, Misamis Oriental, 9001</p>
-        <p class="text-3xl text-white font-bold text-center pb-2">Open Hours of Barangay: Monday to Friday (8AM - 5PM)</p>
-        <p class="text-2xl text-blue-500 font-bold text-center pb-8">Contact No.: 09197568493 | Email: brgybaluarte@gmail.com</p>
+        <img src="{{ asset('img/brgylogo.png') }}" alt="" class="mx-auto w-48 border-2 rounded-full" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <p class="text-5xl text-white font-bold text-center pb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Welcome to Barangay</p>
+        <p class="text-9xl text-white font-bold text-center bg-clip-text bg-gradient-to-r from-yellow-400 to-blue-700 text-transparent pb-8" data-aos="zoom-in" data-aos-duration="2000">Baluarte Proper</p>
+        <p class="text-5xl text-white font-bold text-center pb-2" data-aos="fade-up" data-aos-duration="2000">Tagoloan, Misamis Oriental, 9001</p>
+        <p class="text-3xl text-white font-bold text-center pb-2" data-aos="fade-up" data-aos-duration="2000">Open Hours of Barangay: Monday to Friday (8AM - 5PM)</p>
+        <p class="text-2xl text-blue-500 font-bold text-center pb-8" data-aos="fade-up" data-aos-duration="2000">Contact No.: 09197568493 | Email: brgybaluarte@gmail.com</p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-          <button type="button" class="inline-flex justify-center items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          <button type="button" class="inline-flex justify-center items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" data-aos="fade-right" data-aos-duration="2000">
             Request Certificates
             <x-fas-arrow-right class="w-6 pl-2" />
           </button>
-          <button type="button" class="inline-flex justify-center items-center text-black bg-gray-100 hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          <button type="button" class="inline-flex justify-center items-center text-black bg-gray-100 hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" data-aos="fade-left" data-aos-duration="2000">
             <x-fas-newspaper class="w-6 pr-2" />
             Announcement
           </button>
@@ -97,6 +98,11 @@
     window.scrollTo(0, 0);
 }
 </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

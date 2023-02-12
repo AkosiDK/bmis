@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Documents Page</title>
 </head>
 
@@ -63,7 +64,7 @@
 
   <section class="flex h-screen justify-center items-center">
     <div class="grid grid-cols-8 gap-x-5">
-      <div class="col-span-2">
+      <div class="col-span-2" data-aos="fade-down-right" data-aos-duration="2000">
         <div class="max-w-sm border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <x-fas-file-lines class="w-48 h-60 fill-gray-700 py-5" />
@@ -121,7 +122,7 @@
           </div>
         </div>
       </div>
-      <div class="col-span-2">
+      <div class="col-span-2" data-aos="fade-down-right" data-aos-duration="1000">
         <div class="max-w-sm border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <x-fas-people-group class="w-48 h-60 fill-gray-700 py-5" />
@@ -179,7 +180,7 @@
           </div>
         </div>
       </div>
-      <div class="col-span-2">
+      <div class="col-span-2" data-aos="fade-down-left" data-aos-duration="1000">
         <div class="max-w-sm border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <x-fas-people-roof class="w-48 h-60 fill-gray-700 py-5" />
@@ -237,7 +238,7 @@
           </div>
         </div>
       </div>
-      <div class="col-span-2">
+      <div class="col-span-2" data-aos="fade-down-left" data-aos-duration="2000">
         <div class="max-w-sm border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <x-fas-id-badge class="w-48 h-60 fill-gray-700 py-5" />
@@ -514,6 +515,11 @@
     window.onbeforeunload = function() {
       window.scrollTo(0, 0);
     }
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 
 </body>

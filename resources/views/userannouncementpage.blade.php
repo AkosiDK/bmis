@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Announcement Page</title>
 </head>
 
@@ -101,7 +102,7 @@
 
   <section class="pt-12">
     <div>
-      <p class="text-4xl text-yellow-400 text-center font-bold">Latest Announcement</p>
+      <p class="text-4xl text-yellow-400 text-center font-bold" data-aos="fade-up">Latest Announcement</p>
     </div>
   </section>
 
@@ -109,19 +110,19 @@
     <div class="grid lg:grid-cols-3 px-5 gap-3 xl:gap-x-6">
       <div class="mb-12 lg:mb-0">
         <div>
-          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light" data-aos="fade-up">
             <img src="{{ asset('img/announcement1.jpg') }}" class="w-full" alt="" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
           </div>
 
-          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 BASKETBALL LEAGUE </h5>
-          <p class="text-white mb-5">
+          <h5 class="text-lg font-bold mb-3 text-white" data-aos="fade-up">ARAW NG KABATAAN 2023 BASKETBALL LEAGUE </h5>
+          <p class="text-white mb-5" data-aos="fade-up">
             <small>Published <u>01/24/2023</u> by
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
-          <p class="text-white text-justify indent-8 px-5">
+          <p class="text-white text-justify indent-8 px-5" data-aos="fade-up">
             Ang iskedyul ng basketball ng Barangay para sa Enero 25, 2023 ay puno ng kapana-panabik na mga
             laro at aktibidad na tiyak na magpapasaya sa mga tagahanga ng basketball. Ang pambungad na
             laro ng araw ay magsisimula sa isang mahusay na laro ng street ball. Pagkatapos nito, sasabak
@@ -132,19 +133,19 @@
 
       <div class="mb-12 lg:mb-6">
         <div>
-          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light" data-aos="fade-up">
             <img src="{{ asset('img/announcement2.jpg') }}" class="w-full" alt="" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
           </div>
 
-          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 VOLLEYBALL LEAGUE </h5>
-          <p class="text-white mb-5">
+          <h5 class="text-lg font-bold mb-3 text-white" data-aos="fade-up">ARAW NG KABATAAN 2023 VOLLEYBALL LEAGUE </h5>
+          <p class="text-white mb-5" data-aos="fade-up">
             <small>Published <u>01/24/2023</u> by
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
-          <p class="text-white text-justify indent-8 px-5">
+          <p class="text-white text-justify indent-8 px-5" data-aos="fade-up">
             Nakatakdang simulan ng Barangay Volleyball League ang iskedyul nito sa Enero 25, 2023.
             Magkakaroon ng apat na dibisyon: U-14, U-17, U-21 at U-25. Ang lahat ng mga koponan ay
             inaasahang darating nang hindi bababa sa isang oras bago magsimula ang kanilang laban at
@@ -159,19 +160,19 @@
 
       <div class="mb-12 lg:mb-6">
         <div>
-          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light" data-aos="fade-up">
             <img src="{{ asset('img/announcement3.jpg') }}" class="w-full" alt="" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
           </div>
 
-          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 TABLE TENNIS LEAGUE </h5>
-          <p class="text-white mb-5">
+          <h5 class="text-lg font-bold mb-3 text-white" data-aos="fade-up">ARAW NG KABATAAN 2023 TABLE TENNIS LEAGUE </h5>
+          <p class="text-white mb-5" data-aos="fade-up">
             <small>Published <u>01/24/2023</u> by
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
-          <p class="text-white text-justify indent-8 px-5">
+          <p class="text-white text-justify indent-8 px-5" data-aos="fade-up">
             Ang Brgy. Baluarte ay nagho-host ng isang table tennis tournament sa Enero 25, 2023.
             Ang lahat ng mga rehistradong manlalaro na may edad 16 pataas ay iniimbitahan na magdala
             ng kanilang sariling kagamitan at kasuotan sa Barangay Hall sa pagitan ng 8:00-10:00 AM.
@@ -185,19 +186,19 @@
 
       <div class="mb-12 lg:mb-6">
         <div>
-          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light" data-aos="fade-up">
             <img src="{{ asset('img/announcement1.jpg') }}" class="w-full" alt="" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
           </div>
 
-          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 BASKETBALL LEAGUE </h5>
-          <p class="text-white mb-5">
+          <h5 class="text-lg font-bold mb-3 text-white" data-aos="fade-up">ARAW NG KABATAAN 2023 BASKETBALL LEAGUE </h5>
+          <p class="text-white mb-5" data-aos="fade-up">
             <small>Published <u>01/24/2023</u> by
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
-          <p class="text-white text-justify indent-8 px-5">
+          <p class="text-white text-justify indent-8 px-5" data-aos="fade-up">
             Ang iskedyul ng basketball ng Barangay para sa Enero 25, 2023 ay puno ng kapana-panabik na mga
             laro at aktibidad na tiyak na magpapasaya sa mga tagahanga ng basketball. Ang pambungad na
             laro ng araw ay magsisimula sa isang mahusay na laro ng street ball. Pagkatapos nito, sasabak
@@ -208,19 +209,19 @@
 
       <div class="mb-12 lg:mb-6">
         <div>
-          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light" data-aos="fade-up">
             <img src="{{ asset('img/announcement2.jpg') }}" class="w-full" alt="" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
           </div>
 
-          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 VOLLEYBALL LEAGUE </h5>
-          <p class="text-white mb-5">
+          <h5 class="text-lg font-bold mb-3 text-white" data-aos="fade-up">ARAW NG KABATAAN 2023 VOLLEYBALL LEAGUE </h5>
+          <p class="text-white mb-5" data-aos="fade-up">
             <small>Published <u>01/24/2023</u> by
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
-          <p class="text-white text-justify indent-8 px-5">
+          <p class="text-white text-justify indent-8 px-5" data-aos="fade-up">
             Nakatakdang simulan ng Barangay Volleyball League ang iskedyul nito sa Enero 25, 2023.
             Magkakaroon ng apat na dibisyon: U-14, U-17, U-21 at U-25. Ang lahat ng mga koponan ay
             inaasahang darating nang hindi bababa sa isang oras bago magsimula ang kanilang laban at
@@ -235,19 +236,19 @@
 
       <div class="mb-12 lg:mb-6">
         <div>
-          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light" data-aos="fade-up">
             <img src="{{ asset('img/announcement3.jpg') }}" class="w-full" alt="" />
             <a href="#!">
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
           </div>
 
-          <h5 class="text-lg font-bold mb-3 text-white">ARAW NG KABATAAN 2023 TABLE TENNIS LEAGUE </h5>
-          <p class="text-white mb-5">
+          <h5 class="text-lg font-bold mb-3 text-white" data-aos="fade-up">ARAW NG KABATAAN 2023 TABLE TENNIS LEAGUE </h5>
+          <p class="text-white mb-5" data-aos="fade-up">
             <small>Published <u>01/24/2023</u> by
               <a href="" class="text-yellow-400">Admin</a></small>
           </p>
-          <p class="text-white text-justify indent-8 px-5">
+          <p class="text-white text-justify indent-8 px-5" data-aos="fade-up">
             Ang Brgy. Baluarte ay nagho-host ng isang table tennis tournament sa Enero 25, 2023.
             Ang lahat ng mga rehistradong manlalaro na may edad 16 pataas ay iniimbitahan na magdala
             ng kanilang sariling kagamitan at kasuotan sa Barangay Hall sa pagitan ng 8:00-10:00 AM.
@@ -411,13 +412,17 @@
   </footer>
   <!-- ====== Footer Section End -->
 
-<!-- ====== refresh start top script-->
-<script>
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-}
-</script>
+  <!-- ====== refresh start top script-->
+  <script>
+    window.onbeforeunload = function() {
+      window.scrollTo(0, 0);
+    }
+  </script>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

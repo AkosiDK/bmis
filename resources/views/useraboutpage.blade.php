@@ -63,9 +63,9 @@
 
   <section class="flex justify-center items-center">
     <div class="grid grid-rows-2 grid-flow-col gap-5 px-5 py-5 justify-center items-center">
-      <div class="row-span-3 text-white bg-slate-700 px-5 py-5 rounded-lg">
+      <div class="row-span-3 text-white bg-red-700 px-5 py-5 rounded-lg bg-opacity-30">
         <strong class="text-2xl text-yellow-400"> | Our HISTORY </strong>
-        <div class="indent-8 text-justify">
+        <div class="indent-8 text-justify pt-3">
           In the early days of Barangay Baluarte, the area was known for its fertile land and abundant crops.
           Farmers from all over the region came to sell their goods at the local market, which was the hub of the community.
           It was a place where people gathered to trade, socialize, and share their news. Over time, the barangay grew and evolved,
@@ -92,26 +92,26 @@
           long-time resident or a newcomer, you'll find a welcoming community that is proud of its past and excited for its future.
         </div>
       </div>
-      <div class="col-span-2 text-white bg-slate-700 px-5 py-5 rounded-lg">
+      <div class="col-span-2 text-white bg-blue-700 px-5 py-5 rounded-lg bg-opacity-30">
         <strong class="text-2xl text-yellow-400"> | Our MISSION </strong>
-        <div class="indent-8 text-justify">
+        <div class="indent-8 text-justify pt-3">
         Our mission as a barangay is to promote the well-being of our residents by providing essential services and 
         fostering a strong sense of community. We strive to maintain a clean and safe environment, support local businesses 
         and entrepreneurs, and provide opportunities for education and recreation. We also aim to encourage community 
         involvement by promoting volunteerism and engagement in local events and activities.
         </div>
       </div>
-      <div class="col-span-2 text-white bg-slate-700 px-5 py-5 rounded-lg">
+      <div class="col-span-2 text-white bg-blue-700 px-5 py-5 rounded-lg bg-opacity-30">
         <strong class="text-2xl text-yellow-400"> | Our VISION </strong>
-        <div class="indent-8 text-justify">
+        <div class="indent-8 text-justify pt-3">
         Our vision for Barangay Baluarte is to be a thriving and vibrant community that is proud of its rich history and heritage.
         We envision a future where all residents have access to the resources and services they need to live healthy, fulfilling lives. 
         We want our barangay to be a place where people come together to celebrate, learn, and grow, and where everyone is treated with respect and dignity.
         </div>
       </div>
-      <div class="col-span-2 row-span-2 text-white bg-slate-700 px-5 py-5 rounded-lg">
+      <div class="col-span-2 row-span-2 text-white bg-yellow-700 px-5 py-5 rounded-lg bg-opacity-30">
         <strong class="text-2xl text-yellow-400"> | Our PURPOSE </strong>
-        <div class="indent-8 text-justify">
+        <div class="indent-8 text-justify pt-3">
         As a community, we are proud of our past and excited for our future. We are committed to working together to make Barangay Baluarte a 
         better place for everyone and to preserve the unique qualities that make our barangay special. Whether through volunteering, 
         supporting local businesses, or simply being a good neighbor, we believe that together we can build a bright and prosperous 

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Officials Page</title>
 </head>
 
@@ -63,7 +64,7 @@
 
   <section class="flex justify-center items-center">
     <div class="grid grid-cols-5 gap-10 py-10">
-      <div class="">
+      <div class="" data-aos="flip-left" data-aos-duration="500">
         <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <img src="{{'./img/official1.jpg'}}" alt="" class="">
@@ -77,7 +78,7 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="" data-aos="flip-left" data-aos-duration="1000">
         <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <img src="{{'./img/official2.jpg'}}" alt="" class="">
@@ -91,7 +92,7 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="" data-aos="flip-left" data-aos-duration="1500">
         <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <img src="{{'./img/official3.jpg'}}" alt="" class="">
@@ -105,7 +106,7 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="" data-aos="flip-left" data-aos-duration="2000">
         <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <img src="{{'./img/official4.jpg'}}" alt="" class="">
@@ -119,7 +120,7 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="" data-aos="flip-left" data-aos-duration="2500">
         <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <img src="{{'./img/official5.jpg'}}" alt="" class="">
@@ -133,7 +134,7 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="" data-aos="flip-left" data-aos-duration="500">
         <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <img src="{{'./img/official6.jpg'}}" alt="" class="">
@@ -147,7 +148,7 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="" data-aos="flip-left" data-aos-duration="1000">
         <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <img src="{{'./img/official7.jpg'}}" alt="" class="">
@@ -161,7 +162,7 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="" data-aos="flip-left" data-aos-duration="1500">
         <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <img src="{{'./img/official8.jpg'}}" alt="" class="">
@@ -175,7 +176,7 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="" data-aos="flip-left" data-aos-duration="2000">
         <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <img src="{{'./img/official9.jpg'}}" alt="" class="">
@@ -189,7 +190,7 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="" data-aos="flip-left" data-aos-duration="2500">
         <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-center align-center bg-gray-300">
             <img src="{{'./img/official10.jpg'}}" alt="" class="">
@@ -203,7 +204,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
   </section>
 
@@ -362,6 +363,11 @@
     window.onbeforeunload = function() {
       window.scrollTo(0, 0);
     }
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 
 </body>

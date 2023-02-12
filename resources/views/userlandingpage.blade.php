@@ -92,14 +92,14 @@
 
 
 
-<!-- ====== refresh start top script-->
-<script>
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-}
-</script>
+  <!-- ====== refresh start top script-->
+  <script>
+    window.onbeforeunload = function() {
+      window.scrollTo(0, 0);
+    }
+  </script>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>

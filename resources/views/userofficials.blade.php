@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-  <title>News Page</title>
+  <title>Officials Page</title>
 </head>
 
 <body class="bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('./img/BG.jpg');">
@@ -61,11 +61,153 @@
     </nav>
   </header>
 
-  <section class="flex h-screen w-screen justify-center items-center">
-    
+  <section class="flex justify-center items-center">
+    <div class="grid grid-cols-5 gap-10 py-10">
+      <div class="">
+        <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-center align-center bg-gray-300">
+            <img src="{{'./img/official1.jpg'}}" alt="" class="">
+          </div>
+          <div class="">
+            <h5 class="bg-gray-700 px-3 py-2 text-center text-lg font-bold tracking-tight text-white dark:text-white">
+              RAMON C. PAGARA
+              <span class="text-sm block text-yellow-400">Punong Barangay</span>
+              <span class="text-sm block">2018 - PRESENT</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-center align-center bg-gray-300">
+            <img src="{{'./img/official2.jpg'}}" alt="" class="">
+          </div>
+          <div class="">
+            <h5 class="bg-gray-700 px-3 py-2 text-center text-lg font-bold tracking-tight text-white dark:text-white">
+              ALI RYAN D. DORILAG
+              <span class="text-sm block text-yellow-400">Barangay Kagawad</span>
+              <span class="text-sm block">2018 - PRESENT</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-center align-center bg-gray-300">
+            <img src="{{'./img/official3.jpg'}}" alt="" class="">
+          </div>
+          <div class="">
+            <h5 class="bg-gray-700 px-3 py-2 text-center text-lg font-bold tracking-tight text-white dark:text-white">
+              WILFREDO J. OCLAMAN
+              <span class="text-sm block text-yellow-400">Barangay Kagawad</span>
+              <span class="text-sm block">2018 - PRESENT</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-center align-center bg-gray-300">
+            <img src="{{'./img/official4.jpg'}}" alt="" class="">
+          </div>
+          <div class="">
+            <h5 class="bg-gray-700 px-3 py-2 text-center text-lg font-bold tracking-tight text-white dark:text-white">
+              MANOLITO O. LABITA
+              <span class="text-sm block text-yellow-400">Barangay Kagawad</span>
+              <span class="text-sm block">2018 - PRESENT</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-center align-center bg-gray-300">
+            <img src="{{'./img/official5.jpg'}}" alt="" class="">
+          </div>
+          <div class="">
+            <h5 class="bg-gray-700 px-3 py-2 text-center text-lg font-bold tracking-tight text-white dark:text-white">
+              RICO R. SALCEDO
+              <span class="text-sm block text-yellow-400">Barangay Kagawad</span>
+              <span class="text-sm block">2018 - PRESENT</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-center align-center bg-gray-300">
+            <img src="{{'./img/official6.jpg'}}" alt="" class="">
+          </div>
+          <div class="">
+            <h5 class="bg-gray-700 px-3 py-2 text-center text-lg font-bold tracking-tight text-white dark:text-white">
+              ALICE S. VACALARES
+              <span class="text-sm block text-yellow-400">Barangay Kagawad</span>
+              <span class="text-sm block">2018 - PRESENT</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-center align-center bg-gray-300">
+            <img src="{{'./img/official7.jpg'}}" alt="" class="">
+          </div>
+          <div class="">
+            <h5 class="bg-gray-700 px-3 py-2 text-center text-lg font-bold tracking-tight text-white dark:text-white">
+              JINKY T. CAFE
+              <span class="text-sm block text-yellow-400">Barangay Kagawad</span>
+              <span class="text-sm block">2018 - PRESENT</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-center align-center bg-gray-300">
+            <img src="{{'./img/official8.jpg'}}" alt="" class="">
+          </div>
+          <div class="">
+            <h5 class="bg-gray-700 px-3 py-2 text-center text-lg font-bold tracking-tight text-white dark:text-white">
+              VIRGEL Z. ZAMARRO
+              <span class="text-sm block text-yellow-400">Barangay Kagawad</span>
+              <span class="text-sm block">2018 - PRESENT</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-center align-center bg-gray-300">
+            <img src="{{'./img/official9.jpg'}}" alt="" class="">
+          </div>
+          <div class="">
+            <h5 class="bg-gray-700 px-3 py-2 text-center text-lg font-bold tracking-tight text-white dark:text-white">
+              ANNA RICKA MAE S. NACASABOG
+              <span class="text-sm block text-yellow-400">SK Chairman</span>
+              <span class="text-sm block">2018 - PRESENT</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="max-w-xs border-2 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-center align-center bg-gray-300">
+            <img src="{{'./img/official10.jpg'}}" alt="" class="">
+          </div>
+          <div class="">
+            <h5 class="bg-gray-700 px-3 py-2 text-center text-lg font-bold tracking-tight text-white dark:text-white">
+              CHOLIE T. ABALES
+              <span class="text-sm block text-yellow-400">Barangay Secretary</span>
+              <span class="text-sm block">2018 - PRESENT</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      
+    </div>
   </section>
 
-  
+
   <!-- ====== Footer Section Start -->
   <footer class="relative z-10 bg-gradient-to-r from-red-700  to-blue-700 pt-20 pb-10 lg:pt-[120px] lg:pb-20">
     <div class="container mx-auto">

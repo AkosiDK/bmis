@@ -23,17 +23,20 @@ use App\Http\Livewire\Residents\Addresident;
 Route::get('/userlandingpage', function () {
     return view('userlandingpage');
 });
-Route::get('/userannouncement', function () {
-    return view('userannouncement');
+Route::get('/userannouncementpage', function () {
+    return view('userannouncementpage');
 });
-Route::get('/usernews', function () {
-    return view('usernews');
+Route::get('/usernewspage', function () {
+    return view('usernewspage');
 });
-Route::get('/userdocument', function () {
-    return view('userdocument');
+Route::get('/userdocumentpage', function () {
+    return view('userdocumentpage');
 });
-Route::get('/userofficials', function () {
-    return view('userofficials');
+Route::get('/userofficialspage', function () {
+    return view('userofficialspage');
+});
+Route::get('/useraboutpage', function () {
+    return view('useraboutpage');
 });
 
 

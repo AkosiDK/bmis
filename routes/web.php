@@ -38,6 +38,9 @@ Route::get('/userofficialspage', function () {
 Route::get('/useraboutpage', function () {
     return view('useraboutpage');
 });
+Route::get('/userloginpage', function () {
+    return view('userloginpage');
+});
 
 
 

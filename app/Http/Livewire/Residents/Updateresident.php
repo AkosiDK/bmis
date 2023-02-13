@@ -8,6 +8,6 @@ class Updateresident extends Component
 {
     public function render()
     {
-        return view('livewire.residents.updateresident');
+        // return view('livewire.residents.updateresident');
     }
 }

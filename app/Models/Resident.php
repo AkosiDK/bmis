@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Residents extends Model
+class Resident extends Model
 {
     use HasFactory;
 
@@ -37,6 +37,5 @@ class Residents extends Model
         'officeaddress',
         'employer',
         'employercontact',
-       
     ];
 }

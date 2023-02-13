@@ -1,9 +1,40 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Admin\ResidentController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ChartController;
-use App\Http\Livewire\Residents\Addresident;
+
+
+
+
+// TODO: User routes
+
+// TODO: Admin routes
+Route::group([
+    'prefix' => '/admin',
+    'middleware' => [
+        'auth',
+    ]
+], function () {
+
+    // /dashboard
+    // /officials
+    Route::get('/resident', [ResidentController::class, 'index'])->name('resident');
+    Route::get('/resident/create', [ResidentController::class, 'create'])->name('resident.create');
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,40 +50,40 @@ use App\Http\Livewire\Residents\Addresident;
 |--------------------------------------------------------------------------
 | Web Routes for userpages
 |--------------------------------------------------------------------------
-*/
-Route::get('/userlandingpage', function () {
-    return view('userlandingpage');
-});
-Route::get('/userannouncementpage', function () {
-    return view('userannouncementpage');
-});
-Route::get('/usernewspage', function () {
-    return view('usernewspage');
-});
-Route::get('/userdocumentpage', function () {
-    return view('userdocumentpage');
-});
-Route::get('/userofficialspage', function () {
-    return view('userofficialspage');
-});
-Route::get('/useraboutpage', function () {
-    return view('useraboutpage');
-});
-Route::get('/userloginpage', function () {
-    return view('userloginpage');
-});
+// */
+// Route::get('/userlandingpage', function () {
+//     return view('userlandingpage');
+// });
+// Route::get('/userannouncementpage', function () {
+//     return view('userannouncementpage');
+// });
+// Route::get('/usernewspage', function () {
+//     return view('usernewspage');
+// });
+// Route::get('/userdocumentpage', function () {
+//     return view('userdocumentpage');
+// });
+// Route::get('/userofficialspage', function () {
+//     return view('userofficialspage');
+// });
+// Route::get('/useraboutpage', function () {
+//     return view('useraboutpage');
+// });
+// Route::get('/userloginpage', function () {
+//     return view('userloginpage');
+// });
 
 
 
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes for dashboard
-|--------------------------------------------------------------------------
-*/
-Route::get('/', function () {
-    return view('welcome');
-});
+// /*
+// |--------------------------------------------------------------------------
+// | Web Routes for dashboard
+// |--------------------------------------------------------------------------
+// */
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -74,7 +105,7 @@ Route::get('/settings', function () {
     return view('settings');
 })->middleware(['auth', 'verified'])->name('settings');
 
-Route::post('/residents', [Addresident::class, 'store'])->name('residents');
+// Route::post('/residents', [Addresident::class, 'store'])->name('residents');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

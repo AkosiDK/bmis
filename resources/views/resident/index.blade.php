@@ -54,11 +54,11 @@
                                     <x-fas-user-plus class="w-4 h-4 mr-1" fill="white" />
                                     Resident
                                 </button>
-                                <!-- Insert Resident Modal -->
-                                <livewire:residents.addresident />
+                                {{-- <!-- Insert Resident Modal -->
+                                <livewire:residents.addresident /> --}}
                             </div>
                         </div>
-                        <livewire:residents.residentstable />
+                        {{-- <livewire:residents.residentstable /> --}}
                     </div>
                     <div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
                             <div class="flex flex-1 justify-between sm:hidden">

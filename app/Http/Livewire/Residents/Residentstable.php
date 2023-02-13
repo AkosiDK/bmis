@@ -9,10 +9,10 @@ class Residentstable extends Component
 {
     public function render()
     {
-        return view('livewire.residents.residentstable',[
+        // return view('livewire.residents.residentstable',[
 
-            'residents' => Residents::all(),
+        //     'residents' => Residents::all(),
 
-        ]);
+        // ]);
     }
 }

@@ -8,6 +8,6 @@ class Viewresident extends Component
 {
     public function render()
     {
-        return view('livewire.residents.viewresident');
+        // return view('livewire.residents.viewresident');
     }
 }

@@ -202,9 +202,9 @@
                                     </td>
                                     {{-- TODO: --}}
                                     <td class="px-6 py-2">
-                                        <button data-modal-target="viewresident-modal" data-modal-toggle="viewresident-modal" class="inline-flex items-center hover:bg-green-400 focus:ring-2 focus:outline-none  focus:ring-green-500" title="View Resident">
+                                        <a href="{{ route('resident.show', $resident->id) }}" data-modal-target="viewresident-modal" data-modal-toggle="viewresident-modal" class="inline-flex items-center hover:bg-green-400 focus:ring-2 focus:outline-none  focus:ring-green-500" title="View Resident">
                                             <x-fas-eye class="w-4 h-4  fill-green-600" />
-                                        </button>
+                                        </a>
                                         <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="inline-flex items-center hover:bg-red-400 focus:ring-2 focus:outline-none  focus:ring-red-500" title="Delete Official">
                                             <x-fas-square-xmark class=" w-4 h-4 fill-red-600" />
                                         </button>

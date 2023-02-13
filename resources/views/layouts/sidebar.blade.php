@@ -49,7 +49,7 @@
 
         <!-- Ayaw Gumana -->
 
-        <x-sidebar-nav-link :href="route('resident')" :active="request()->routeIs('resident')">
+        <x-sidebar-nav-link :href="route('resident.index')" :active="request()->routeIs('resident.index')">
             <x-slot name="icon">
             <x-fas-user class="w-4 mr-4 fill-white"/>
             </x-slot>

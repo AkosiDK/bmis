@@ -18,12 +18,12 @@
 <body>
     <div>
         <!-- official Modal -->
-        <div id="addofficial-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
-            <div class="relative w-full h-full max-w-lg md:h-auto">
+        <div id="addofficial-modal" tabindex="-1">
+            <div class="relative w-full h-full">
                 <!-- Modal content -->
-                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="relative bg-white dark:bg-gray-700">
                     <!-- Modal header -->
-                    <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600 bg-gradient-to-r from-blue-600 to-blue-500">
+                    <div class="flex items-center justify-between p-5 border-b dark:border-gray-600 bg-gradient-to-r from-blue-600 to-blue-500">
                         <h3 class="text-xl font-medium text-white dark:text-white">
                             Add - Brgy. Official Record
                         </h3>
@@ -37,7 +37,7 @@
                     <!-- Modal body -->
 
                     <form class="space-y-6" action="{{ route('officials.store') }}" method="POST">
-                    @csrf
+                        @csrf
                         <div class="p-6 space-y-3">
                             <!-- Fullname -->
                             <label for="fullname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full Name</label>

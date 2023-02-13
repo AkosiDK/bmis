@@ -19,7 +19,7 @@
         <div id="addresident-modal" tabindex="-1">
             <div class="relative w-full h-full">
                 <!-- Modal content -->
-                <div class="relative bg-gray-200 dark:bg-gray-700">
+                <div class="relative bg-white dark:bg-gray-700">
                     <!-- Modal header -->
                     <div class="flex items-center justify-between p-5 border-b  dark:border-gray-600 bg-gradient-to-r from-blue-600 to-blue-500">
                         <h3 class="text-xl font-medium text-white dark:text-white">

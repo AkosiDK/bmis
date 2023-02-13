@@ -40,7 +40,7 @@
             <p class="text-white">{{ __('Dashboard') }}</p>
         </x-sidebar-nav-link>
 
-        <x-sidebar-nav-link :href="route('officials')" :active="request()->routeIs('officials')">
+        <x-sidebar-nav-link :href="route('officials.index')" :active="request()->routeIs('officials.index')">
             <x-slot name="icon">
                 <x-fas-user-tie class="w-4 mr-4 fill-white"/>
             </x-slot>

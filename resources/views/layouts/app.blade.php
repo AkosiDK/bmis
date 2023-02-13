@@ -60,7 +60,7 @@
                     </div>
                     <div class="col-span-6 justify-end flex place-items-center">
                         <div class="relative">
-                            <img type="button" class="w-10 h-10 rounded-full cursor-pointer ring-2 ring-gray-300" src="{{ asset('img/user.jpeg') }}" alt="User dropdown" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start">
+                            <img type="button" class="w-10 h-10 rounded-full cursor-pointer ring-2 ring-gray-300  bg-white" src="{{ asset('img/defaultavatar.png') }}" alt="User dropdown" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start">
                             <span class="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
                             <!-- Dropdown menu -->
                             <div id="userDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">

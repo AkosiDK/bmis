@@ -8,11 +8,11 @@ use Illuminate\Http\Request;
 
 class ResidentController extends Controller
 {
-    public function index(Request $request)
-    {
-        $residents = Resident::paginate(10);
-        return view('resident.index')->with('residents', $residents);
-    }
+        public function index(Request $request)
+        {
+            $residents = Resident::paginate(10);
+            return view('resident.index')->with('residents', $residents);
+        }
 
     public function create(Request $request)
     {

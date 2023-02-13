@@ -1,14 +1,32 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="text-lg text-blue-100 md:text-2xl">
-            Dashboard
+            Barangay Officials
         </h2>
     </x-slot>
     <x-slot name="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item">Dashboard</li>
         </ol>
     </x-slot>
+
+    <div class="mx-auto">
+        <div class="bg-white overflow-hidden sm:rounded-lg shadow-lg">
+            <div class="grid grid-cols-4">
+                <div class="rounded-lg col-span-4 py-2">
+                    <div class="text-center">
+                        <p class="text-xs font-bold">Republic of the Philippines</p>
+                        <p class="text-xs font-bold">Province of Misamis Oriental</p>
+                        <p class="text-xs font-bold">Municipality of Tagoloan, 9001</p>
+                        <img src="{{ asset('img/brgylogo.png') }}" alt="" class="mx-auto w-24">
+                        <p class="text-xl font-bold">BRGY. BALUARTE</p>
+                        <p class="text-xs font-bold">Contact No.: 09123456789</p>
+                        <p class="text-xs font-bold">Email: brgybaluarte@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="mx-auto pt-5">
         <div class="bg-white overflow-hidden sm:rounded-lg shadow-lg">

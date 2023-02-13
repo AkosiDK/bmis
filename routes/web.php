@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ResidentController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +18,11 @@ Route::group([
 ], function () {
 
     // /dashboard
-    // /officials
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+
+    // TODO: /officials
+
+    // Resident
     Route::get('/resident', [ResidentController::class, 'index'])->name('resident.index');
     Route::get('/resident/create', [ResidentController::class, 'create'])->name('resident.create');
     Route::post('/resident/create', [ResidentController::class, 'store'])->name('resident.store');

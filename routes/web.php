@@ -55,6 +55,7 @@ Route::group([
     // TODO: /officials
     Route::get('/officials', [OfficialsController::class, 'index'])->name('officials.index');
     Route::get('/officials/create', [OfficialsController::class, 'create'])->name('officials.create');
+    Route::post('/officials/create', [OfficialsController::class, 'store'])->name('officials.store');
 
     // Resident
     Route::get('/resident', [ResidentController::class, 'index'])->name('resident.index');

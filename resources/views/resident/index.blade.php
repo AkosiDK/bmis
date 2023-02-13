@@ -202,7 +202,13 @@
                                     </td>
                                     {{-- TODO: --}}
                                     <td class="px-6 py-2">
-                                        <!-- Update Modal -->
+                                        <button data-modal-target="viewresident-modal" data-modal-toggle="viewresident-modal" class="inline-flex items-center hover:bg-green-400 focus:ring-2 focus:outline-none  focus:ring-green-500" title="View Resident">
+                                            <x-fas-eye class="w-4 h-4  fill-green-600" />
+                                        </button>
+                                        <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="inline-flex items-center hover:bg-red-400 focus:ring-2 focus:outline-none  focus:ring-red-500" title="Delete Official">
+                                            <x-fas-square-xmark class=" w-4 h-4 fill-red-600" />
+                                        </button>
+                                        {{-- <!-- Update Modal -->
                                         <button data-modal-target="editresident-modal" data-modal-toggle="editresident-modal" class="inline-flex items-center hover:bg-blue-400 focus:ring-2 focus:outline-none  focus:ring-blue-500" title="Edit Resident">
                                             <x-fas-square-pen class="w-4 h-4  fill-blue-600" />
                                         </button>
@@ -248,7 +254,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                     </td>
                                 </tr>
                                 @endforeach

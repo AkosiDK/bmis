@@ -21,6 +21,7 @@ Route::group([
     Route::get('/resident', [ResidentController::class, 'index'])->name('resident.index');
     Route::get('/resident/create', [ResidentController::class, 'create'])->name('resident.create');
     Route::post('/resident/create', [ResidentController::class, 'store'])->name('resident.store');
+    Route::get('/resident/{id}', [ResidentController::class, 'show'])->name('resident.show');
     
 
 

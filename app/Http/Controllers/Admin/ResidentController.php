@@ -24,7 +24,7 @@ class ResidentController extends Controller
         $firstname = $request->firstname;
         $middlename = $request->middlename;
         $lastname = $request->lastname;
-        
+
         $suffix = $request->suffix;
         $alias = $request->alias;
         $gender = $request->gender;
@@ -40,7 +40,7 @@ class ResidentController extends Controller
         $alivedordeceased = $request->alivedordeceased;
         $voterstatus = $request->voterstatus;
         $bloodtype = $request->bloodtype;
-        
+
         $pwd = $request->pwd;
         // $region = $request->region;
         // $province = $request->province;
@@ -56,7 +56,7 @@ class ResidentController extends Controller
         $officeaddress = $request->officeaddress;
         $employer = $request->employer;
         $employercontact = $request->employercontact;
-        
+
         Resident::create([
             'firstname' => $firstname,
             'middlename' => $middlename,
@@ -98,5 +98,9 @@ class ResidentController extends Controller
         return redirect()->route('resident.index');
     }
 
-    
+    public function show(Request $request)
+    {
+        $resident = Resident::find($request->id);
+        return view('resident.show')->with('resident', $resident);
+    }
 }

@@ -59,6 +59,156 @@
                             </div>
                         </div>
                         {{-- <livewire:residents.residentstable /> --}}
+                        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                            <thead class="text-xs text-white uppercase bg-gray-800 dark:bg-gray-700 dark:text-gray-400">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Fullname
+                                            <a href="#">
+                                                <x-fas-sort class="w-3 h-3" />
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            National ID
+                                            <a href="#">
+                                                <x-fas-sort class="w-3 h-3" />
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Alias
+                                            <a href="#">
+                                                <x-fas-sort class="w-3 h-3" />
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Gender
+                                            <a href="#">
+                                                <x-fas-sort class="w-3 h-3" />
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Age
+                                            <a href="#">
+                                                <x-fas-sort class="w-3 h-3" />
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Birthday
+                                            <a href="#">
+                                                <x-fas-sort class="w-3 h-3" />
+                                            </a>
+                                        </div>
+                                    </th>
+                        
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Civil Status
+                                            <a href="#">
+                                                <x-fas-sort class="w-3 h-3" />
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Voters Status
+                                            <a href="#">
+                                                <x-fas-sort class="w-3 h-3" />
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            PWD
+                                            <a href="#">
+                                                <x-fas-sort class="w-3 h-3" />
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Address
+                                            <a href="#">
+                                                <x-fas-sort class="w-3 h-3" />
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Alived/Deceased
+                                            <a href="#">
+                                                <x-fas-sort class="w-3 h-3" />
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Action
+                                            <a href="#">
+                                                <x-fas-sort class="w-3 h-3" />
+                                            </a>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($residents as $resident)
+                                <tr class="bg-gray-100 dark:bg-gray-800">
+                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                        {{$resident->firstname }} {{$resident->middlename }} {{$resident->lastname }}
+                                    </td>
+                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                        {{$resident->nationalid }}
+                                    </td>
+                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                        {{$resident->alias}}
+                                    </td>
+                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                        {{$resident->gender}}
+                                    </td>
+                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                        {{ \Carbon\Carbon::parse($resident->birthdate)->age }}
+                                    </td>
+                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                        {{$resident->birthdate }}
+                                    </td>
+                        
+                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                        {{$resident->civilstatus }}
+                                    </td>
+                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                        {{$resident->voterstatus }}
+                                    </td>
+                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                        {{$resident->pwd }}
+                                    </td>
+                                    <td class="px-6 py-2 text-clip overflow-hidden ...">
+                                        Zone 6B, Baluarte, Tagoloan, Mis. Or.
+                                    </td>
+                                    <td class="px-6 py-2">
+                                        <span
+                                            class="bg-green-600 text-white text-xs font-medium items-center file:mr-2 px-2.5 py-0.5 rounded-full"
+                                            title="Official is Active">
+                                            {{$resident->alivedordeceased }}
+                                        </span>
+                                    </td>
+                                    {{-- TODO: --}}
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+
+
                     </div>
                     <div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
                             <div class="flex flex-1 justify-between sm:hidden">
@@ -78,7 +228,8 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+                                    {{ $residents->links() }}
+                                    {{-- <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
                                         <a href="#" class="relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20">
                                             <span class="sr-only">Previous</span>
                                             <!-- Heroicon name: mini/chevron-left -->
@@ -101,7 +252,7 @@
                                                 <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
                                             </svg>
                                         </a>
-                                    </nav>
+                                    </nav> --}}
                                 </div>
                             </div>
                         </div>

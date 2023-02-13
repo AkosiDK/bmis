@@ -24,8 +24,8 @@ Route::group([
     Route::get('/resident/{id}', [ResidentController::class, 'show'])->name('resident.show');
     Route::get('/resident/{id}/edit', [ResidentController::class, 'edit'])->name('resident.edit');
     Route::post('/resident/{id}', [ResidentController::class, 'update'])->name('resident.update');
-    
-
+    // TODO: Delete resident
+    Route::get('/resident/search/{name}', [ResidentController::class, 'search'])->name('resident.search');
 
 });
 

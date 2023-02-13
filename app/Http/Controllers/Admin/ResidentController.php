@@ -190,4 +190,16 @@ class ResidentController extends Controller
 
         return redirect()->route('resident.index');
     }
+
+    // TODO: Delete
+
+    public function search(Request $request)
+    {
+        $residents = Resident::where('firstname', 'LIKE', "%" . $request->name . "%")
+            ->orWhere('middlename', 'LIKE', "%" . $request->name . "%")
+            ->orWhere('lastname', 'LIKE', "%" . $request->name . "%")
+            ->paginate(10);
+        return view('resident.index')->with('residents', $residents);
+    }
+
 }

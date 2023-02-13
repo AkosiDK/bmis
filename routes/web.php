@@ -32,6 +32,9 @@ Route::group([
     // TODO: Delete resident
     Route::get('/resident/search/{name}', [ResidentController::class, 'search'])->name('resident.search');
 
+    // TODO: Resident request
+
+
 });
 
 
@@ -70,9 +73,9 @@ Route::group([
 // Route::get('/usernewspage', function () {
 //     return view('usernewspage');
 // });
-// Route::get('/userdocumentpage', function () {
-//     return view('userdocumentpage');
-// });
+Route::get('/userdocumentpage', function () {
+    return view('userdocumentpage');
+});
 // Route::get('/userofficialspage', function () {
 //     return view('userofficialspage');
 // });

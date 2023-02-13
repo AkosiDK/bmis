@@ -27,6 +27,18 @@ use Illuminate\Support\Facades\Route;
 //     return view('userloginpage');
 // });
 
+// Authenticated user
+Route::group([
+    'prefix' => '/user',
+    'middleware' => [
+        'auth',
+    ]
+], function () {
+    // 
+});
+
+
+
 // Admin routes
 Route::group([
     'prefix' => '/admin',
@@ -52,7 +64,6 @@ Route::group([
     Route::get('/resident/search/{name}', [ResidentController::class, 'search'])->name('resident.search');
 
     // TODO: Resident request
-
 
 });
 
@@ -124,4 +135,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

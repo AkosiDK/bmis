@@ -4,16 +4,35 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ResidentController;
 use Illuminate\Support\Facades\Route;
 
+// User routes
+// Route::get('/', function () {
+//     return view('userlandingpage');
+// });
+// Route::get('/announcement', function () {
+//     return view('userannouncementpage');
+// });
+// Route::get('/news', function () {
+//     return view('usernewspage');
+// });
+// Route::get('/document', function () {
+//     return view('userdocumentpage');
+// });
+// Route::get('/officials', function () {
+//     return view('userofficialspage');
+// });
+// Route::get('/about', function () {
+//     return view('useraboutpage');
+// });
+// Route::get('/login', function () {
+//     return view('userloginpage');
+// });
 
-
-
-// TODO: User routes
-
-// TODO: Admin routes
+// Admin routes
 Route::group([
     'prefix' => '/admin',
     'middleware' => [
         'auth',
+        'admin'
     ]
 ], function () {
 
@@ -63,28 +82,7 @@ Route::group([
 |--------------------------------------------------------------------------
 | Web Routes for userpages
 |--------------------------------------------------------------------------
-// */
-// Route::get('/userlandingpage', function () {
-//     return view('userlandingpage');
-// });
-// Route::get('/userannouncementpage', function () {
-//     return view('userannouncementpage');
-// });
-// Route::get('/usernewspage', function () {
-//     return view('usernewspage');
-// });
-Route::get('/userdocumentpage', function () {
-    return view('userdocumentpage');
-});
-// Route::get('/userofficialspage', function () {
-//     return view('userofficialspage');
-// });
-// Route::get('/useraboutpage', function () {
-//     return view('useraboutpage');
-// });
-// Route::get('/userloginpage', function () {
-//     return view('userloginpage');
-// });
+
 
 
 

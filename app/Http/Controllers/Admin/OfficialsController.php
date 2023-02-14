@@ -49,5 +49,42 @@ class OfficialsController extends Controller
         return redirect()->route('officials.index');
     }
 
+    public function edit(Request $request)
+    {
+        $officials = Officials::find($request->id);
+        return view('officials.edit')->with('officials', $officials);
+    }
+
+    public function update(Request $request)
+    {
+        $fullname = $request->fullname;
+        $contact = $request->contact;
+        $chairmanship = $request->chairmanship;
+
+        $position = $request->position;
+        $termstart = $request->termstart;
+        $termend = $request->termend;
+
+        $address = $request->address;
+        $status = $request->status;
+
+        $officials = Officials::find($request->id);
+
+        $officials->update([
+            'fullname' => $fullname,
+            'contact' => $contact,
+            'chairmanship' => $chairmanship,
+
+            'position' => $position,
+            'termstart' => $termstart,
+            'termend' => $termend,
+
+            'address' => $address,
+            'status' => $status,
+        ]);
+
+        return redirect()->route('officials.index');
+    }
+
    
 }

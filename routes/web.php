@@ -52,10 +52,12 @@ Route::group([
     // /dashboard
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 
-    // TODO: /officials
+    // officials
     Route::get('/officials', [OfficialsController::class, 'index'])->name('officials.index');
     Route::get('/officials/create', [OfficialsController::class, 'create'])->name('officials.create');
     Route::post('/officials/create', [OfficialsController::class, 'store'])->name('officials.store');
+    Route::get('/officials/{id}/edit', [OfficialsController::class, 'edit'])->name('officials.edit');
+    Route::post('/officials/{id}', [OfficialsController::class, 'update'])->name('officials.update');
 
     // Resident
     Route::get('/resident', [ResidentController::class, 'index'])->name('resident.index');

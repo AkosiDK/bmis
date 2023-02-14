@@ -15,7 +15,7 @@
 </head>
 <body>
     <div>
-        <!-- add Resident -->
+        <!-- edit Resident -->
         <div id="addresident-modal" tabindex="-1">
             <div class="relative w-full h-full">
                 <!-- Modal content -->
@@ -23,7 +23,7 @@
                     <!-- Modal header -->
                     <div class="flex items-center justify-between p-5 border-b  dark:border-gray-600 bg-gradient-to-r from-blue-600 to-blue-500">
                         <h3 class="text-xl font-medium text-white dark:text-white">
-                            Add - Resident Record
+                            Edit - Resident Record
                         </h3>
                         <button type="button" class="text-white bg-transparent hover:bg-blue-600 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="addresident-modal">
                             <svg aria-hidden="true" class="w-5 h-5" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

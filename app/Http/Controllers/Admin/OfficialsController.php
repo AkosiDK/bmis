@@ -86,5 +86,13 @@ class OfficialsController extends Controller
         return redirect()->route('officials.index');
     }
 
+    // TODO: Delete
+
+    public function search(Request $request)
+    {
+        $officials = Officials::where('fullname', 'LIKE', "%" . $request->name . "%")->paginate(10);
+        return view('officials.index')->with('officials', $officials);
+    }
+
    
 }

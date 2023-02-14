@@ -58,6 +58,8 @@ Route::group([
     Route::post('/officials/create', [OfficialsController::class, 'store'])->name('officials.store');
     Route::get('/officials/{id}/edit', [OfficialsController::class, 'edit'])->name('officials.edit');
     Route::post('/officials/{id}', [OfficialsController::class, 'update'])->name('officials.update');
+    Route::get('/officials/{id}', [OfficialsController::class, 'destroy'])->name('officials.destroy');
+    Route::get('/officials/search/{name}', [OfficialsController::class, 'search'])->name('officials.search');
 
     // Resident
     Route::get('/resident', [ResidentController::class, 'index'])->name('resident.index');
@@ -66,8 +68,9 @@ Route::group([
     Route::get('/resident/{id}', [ResidentController::class, 'show'])->name('resident.show');
     Route::get('/resident/{id}/edit', [ResidentController::class, 'edit'])->name('resident.edit');
     Route::post('/resident/{id}', [ResidentController::class, 'update'])->name('resident.update');
-    // TODO: Delete resident
     Route::get('/resident/search/{name}', [ResidentController::class, 'search'])->name('resident.search');
+
+    // TODO: Delete resident
 
     // TODO: Resident request
 

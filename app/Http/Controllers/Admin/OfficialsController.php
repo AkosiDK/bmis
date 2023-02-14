@@ -46,7 +46,7 @@ class OfficialsController extends Controller
             
         ]);
 
-        return redirect()->route('officials.index');
+        return redirect()->route('officials.index')->with('success', 'New official record added successfully!');
     }
 
     public function edit(Request $request)
@@ -83,10 +83,18 @@ class OfficialsController extends Controller
             'status' => $status,
         ]);
 
-        return redirect()->route('officials.index');
+        return redirect()->route('officials.index')->with('success', 'Successfully updated official record!');
     }
 
     // TODO: Delete
+
+    public function destroy($id)
+    {
+        $officials = Officials::find($id);
+        $officials->delete();
+
+        return redirect()->route('officials.index')->with('success', 'Official record deleted!');
+    }
 
     public function search(Request $request)
     {

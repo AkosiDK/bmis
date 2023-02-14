@@ -58,15 +58,20 @@
                             </div>
                             <div class="col-span-9 pt-2 justify-self-end px-5">
                                 <!-- add Resident Modal -->
-                                <button data-modal-target="addresident-modal" data-modal-toggle="addresident-modal" class="text-white inline-flex items-center bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-full text-sm px-4 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700" title="Add Resident">
+                                <a href="{{ route('resident.create') }}" class="text-white inline-flex items-center bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-full text-sm px-4 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700" title="Add Resident">
                                     <x-fas-user-plus class="w-4 h-4 mr-1" fill="white" />
                                     Resident
-                                </button>
+                                </a>
                                 {{-- <!-- Insert Resident Modal -->
                                 <livewire:residents.addresident /> --}}
                             </div>
                         </div>
                         {{-- <livewire:residents.residentstable /> --}}
+                        @if (session('success'))
+                        <div class="p-4 text-sm text-gray-800 bg-gray-50 dark:bg-gray-800 dark:text-gray-300" role="alert">
+                            <span class="font-medium">{{ session('success') }}</span>
+                        </div>
+                        @endif
                         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                             <thead class="text-xs text-white uppercase bg-gray-800 dark:bg-gray-700 dark:text-gray-400">
                                 <tr>

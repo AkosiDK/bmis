@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
     <script src="https://f001.backblazeb2.com/file/buonzz-assets/jquery.ph-locations.js"></script>
 </head>
+
 <body>
     <div>
         <!-- add Resident -->
@@ -25,30 +27,34 @@
                         <h3 class="text-xl font-medium text-white dark:text-white">
                             Add - Resident Record
                         </h3>
-                        <button type="button" class="text-white bg-transparent hover:bg-blue-600 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="addresident-modal">
+                        <a href="{{ route('resident.index') }}" class="text-white bg-transparent hover:bg-blue-600 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="addresident-modal">
                             <svg aria-hidden="true" class="w-5 h-5" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                             </svg>
                             <span class="sr-only">Close modal</span>
-                        </button>
+                        </a>
                     </div>
-        
+
                     <!-- Modal body -->
                     <div class="mx-auto">
                         <div class="container mx-auto my-5 p-5">
                             <div class="mx-auto pb-5">
                                 <div class="bg-white overflow-hidden rounded-lg shadow-lg">
-        
-                                    <div class="grid grid-cols-4">
-                                        <div class="rounded-lg col-span-4 py-2">
-                                            <div>
-                                                <img src="{{ asset('img/brgylogo.png') }}" alt="" class="mx-auto w-24 h-24">
-                                                <p class="text-center text-xl font-bold text-black">Barangay Baluarte, Tagoloan</p>
-                                                <p class="text-center text-xl font-bold text-black">Misamis Oriental, 9001</p>
+                                    <div class="bg-white overflow-hidden sm:rounded-lg shadow-lg">
+                                        <div class="grid grid-cols-4">
+                                            <div class="rounded-lg col-span-4 py-2">
+                                                <div class="text-center">
+                                                    <p class="text-xs font-bold">Republic of the Philippines</p>
+                                                    <p class="text-xs font-bold">Province of Misamis Oriental</p>
+                                                    <p class="text-xs font-bold">Municipality of Tagoloan, 9001</p>
+                                                    <img src="{{ asset('img/brgylogo.png') }}" alt="" class="mx-auto w-24">
+                                                    <p class="text-xl font-bold">BRGY. BALUARTE</p>
+                                                    <p class="text-xs font-bold">Contact No.: 09123456789</p>
+                                                    <p class="text-xs font-bold">Email: brgybaluarte@gmail.com</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-        
                                 </div>
                             </div>
                             <div class="md:flex no-wrap md:-mx-2 ">
@@ -76,11 +82,11 @@
                                             </div>
                                         </div>
                                     </div>
-        
+
                                     <div class="my-4"></div>
-        
+
                                 </div>
-        
+
                                 <!-- Right Side -->
                                 <!-- About Section -->
                                 <form class="space-y-6" action="{{ route('resident.store') }}" method="POST">
@@ -94,7 +100,7 @@
                                         </div>
                                         <div class="py-5">
                                             <div class="grid grid-cols-9 gap-x-5">
-            
+
                                                 <div class="pb-5 col-span-2">
                                                     <label for="firstname" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
                                                     <input type="name" name="firstname" id="firstname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Darryl Kaye" required>
@@ -194,25 +200,25 @@
                                                 <div class="pb-5">
                                                     <label for="region" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Region</label>
                                                     <select id="region" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                                    
+
                                                     </select>
                                                 </div>
                                                 <div class="pb-5">
                                                     <label for="province" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Province</label>
                                                     <select id="province" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                                        
+
                                                     </select>
                                                 </div>
                                                 <div class="pb-5">
                                                     <label for="city" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">City</label>
                                                     <select id="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                                        
+
                                                     </select>
                                                 </div>
                                                 <div class="pb-5">
                                                     <label for="barangay" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Barangay</label>
                                                     <select id="barangay" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                                        
+
                                                     </select>
                                                 </div>
                                                 <div class="pb-5 col-span-2">
@@ -229,7 +235,7 @@
                                                 </div>
                                             </div>
                                         </div>
-            
+
                                         <!-- Current Employment -->
                                         <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
                                             <span clas="text-green-500">
@@ -239,7 +245,7 @@
                                         </div>
                                         <div class="py-5">
                                             <div class="grid grid-cols-4 gap-x-5">
-            
+
                                                 <div class="pb-5">
                                                     <label for="occupation" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Occupation</label>
                                                     <input type="text" name="occupation" id="occupation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Office Clerk" required>
@@ -257,7 +263,7 @@
                                                     <input type="number" name="employercontact" id="employercontact" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="09123456789" required>
                                                     {{-- @error('employercontact') <span class="error">{{ $message }}</span> @enderror --}}
                                                 </div>
-            
+
                                             </div>
                                             <div class="grid grid-cols-5 gap-5">
                                                 <div class="pb-5">
@@ -280,18 +286,18 @@
                                                     <label for="philhealthnumber" class="mb-5 text-sm font-medium text-gray-900 dark:text-white">Philhealth No.</label>
                                                     <input type="number" name="philhealthnumber" id="philhealthnumber" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="123456789012" required>
                                                 </div>
-            
+
                                             </div>
                                         </div>
                                         <!-- Modal footer -->
                                         <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600 justify-end">
-                                            <button  data-modal-hide="addresident-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
-                                            <button  type="submit"  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save</button>
+                                            <a href="{{ route('resident.index') }}" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</a>
+                                            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save</button>
                                         </div>
-            
+
                                     </div>
                                 </form>
-        
+
                             </div>
                         </div>
                     </div>
@@ -335,14 +341,15 @@
             $('#barangay').ph_locations({'location_type': 'barangays'});
     
             $('#region').val("{{ $region }}");
-            $('#province').val("{{ $selectedProvince }}");
-            $('#city').val("{{ $selectedCity }}");
-            $('#barangay').val("{{ $selectedBarangay }}");
-    
-            $('#region').ph_locations('fetch_list');
-    
-        });
-    
+    $('#province').val("{{ $selectedProvince }}");
+    $('#city').val("{{ $selectedCity }}");
+    $('#barangay').val("{{ $selectedBarangay }}");
+
+    $('#region').ph_locations('fetch_list');
+
+    });
+
     </script> --}}
 </body>
+
 </html>

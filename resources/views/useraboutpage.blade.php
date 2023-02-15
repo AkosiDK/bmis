@@ -38,22 +38,22 @@
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
           <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
+              <a href="./userlandingpage" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
             </li>
             <li>
-              <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Announcement</a>
+              <a href="/userannouncementpage" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Announcement</a>
             </li>
             <li>
-              <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">News</a>
+              <a href="/usernewspage" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">News</a>
             </li>
             <li>
-              <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Document</a>
+              <a href="/userdocumentpage" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Document</a>
             </li>
             <li>
-              <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Official</a>
+              <a href="/userofficialspage" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Official</a>
             </li>
             <li>
-              <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              <a href="/useraboutpage" class="block text-lg py-2 pl-3 pr-4 text-white rounded bg-clip-text hover:font-semibold hover:bg-gradient-to-r from-yellow-400 to-blue-600 hover:text-transparent hover:bg-gray-100 md:hover:bg-transparent md:hover:underline md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
             </li>
           </ul>
         </div>
@@ -95,30 +95,30 @@
       <div class="col-span-2 text-white bg-blue-700 px-5 py-5 rounded-lg bg-opacity-30">
         <strong class="text-2xl text-yellow-400"> | Our MISSION </strong>
         <div class="indent-8 text-justify pt-3">
-        Our mission as a barangay is to promote the well-being of our residents by providing essential services and 
-        fostering a strong sense of community. We strive to maintain a clean and safe environment, support local businesses 
-        and entrepreneurs, and provide opportunities for education and recreation. We also aim to encourage community 
-        involvement by promoting volunteerism and engagement in local events and activities.
+          Our mission as a barangay is to promote the well-being of our residents by providing essential services and
+          fostering a strong sense of community. We strive to maintain a clean and safe environment, support local businesses
+          and entrepreneurs, and provide opportunities for education and recreation. We also aim to encourage community
+          involvement by promoting volunteerism and engagement in local events and activities.
         </div>
       </div>
       <div class="col-span-2 text-white bg-blue-700 px-5 py-5 rounded-lg bg-opacity-30">
         <strong class="text-2xl text-yellow-400"> | Our VISION </strong>
         <div class="indent-8 text-justify pt-3">
-        Our vision for Barangay Baluarte is to be a thriving and vibrant community that is proud of its rich history and heritage.
-        We envision a future where all residents have access to the resources and services they need to live healthy, fulfilling lives. 
-        We want our barangay to be a place where people come together to celebrate, learn, and grow, and where everyone is treated with respect and dignity.
+          Our vision for Barangay Baluarte is to be a thriving and vibrant community that is proud of its rich history and heritage.
+          We envision a future where all residents have access to the resources and services they need to live healthy, fulfilling lives.
+          We want our barangay to be a place where people come together to celebrate, learn, and grow, and where everyone is treated with respect and dignity.
         </div>
       </div>
       <div class="col-span-2 row-span-2 text-white bg-yellow-700 px-5 py-5 rounded-lg bg-opacity-30">
         <strong class="text-2xl text-yellow-400"> | Our PURPOSE </strong>
         <div class="indent-8 text-justify pt-3">
-        As a community, we are proud of our past and excited for our future. We are committed to working together to make Barangay Baluarte a 
-        better place for everyone and to preserve the unique qualities that make our barangay special. Whether through volunteering, 
-        supporting local businesses, or simply being a good neighbor, we believe that together we can build a bright and prosperous 
-        future for Barangay Baluarte.
+          As a community, we are proud of our past and excited for our future. We are committed to working together to make Barangay Baluarte a
+          better place for everyone and to preserve the unique qualities that make our barangay special. Whether through volunteering,
+          supporting local businesses, or simply being a good neighbor, we believe that together we can build a bright and prosperous
+          future for Barangay Baluarte.
         </div>
       </div>
-      
+
     </div>
 
   </section>
